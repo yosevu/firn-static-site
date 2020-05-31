@@ -1,0 +1,6 @@
+.attach
+.DS_Store
+.nrepl-port
+.orgids
+org-roam.db
+private
