@@ -28,7 +28,7 @@ Clojure strings are Java strings. This means that you can use any of the Java st
 
 #+BEGIN_SRC clojure
 (defn intro-to-strings []
-    (= "HELLO WORLD" (.toUpperCase "hello world")))
+  (= "HELLO WORLD" (.toUpperCase "hello world")))
 #+END_SRC
 
 ** 4. Intro to Lists
@@ -36,26 +36,16 @@ Clojure strings are Java strings. This means that you can use any of the Java st
 Lists can be constructed with either a function or a quoted form.
 
 #+BEGIN_SRC clojure
-(do
-  (defn intro-to-lists []
+(defn intro-to-lists []
     (= (list :a :b :c) '(:a :b :c)))
-  (intro-to-lists))
 #+END_SRC
-
-#+RESULTS:
-: true
 
 ** 5. Lists: conj
 
 When operating on a list, the conj function will return a new list with one or more items "added" to the front.
 
 #+BEGIN_SRC clojure
-(do
-  (defn lists-conj []
-    (= '(1 2 3 4) (conj '(2 3 4)))
-    (= '(1 2 3 4 (conj '(3 4) 2 1))))
-  (lists-conj))
+(defn lists-conj []
+  (= '(1 2 3 4) (conj '(2 3 4)))
+  (= '(1 2 3 4 (conj '(3 4) 2 1))))
 #+END_SRC
-
-#+RESULTS:
-: true
