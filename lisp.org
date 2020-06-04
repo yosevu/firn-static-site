@@ -1,0 +1,8 @@
+#+TITLE: Lisp
+#+CREATED: 2020-06-02
+#+ROAM_ALIAS:
+#+ROAM_TAGS: "public"
+
+* Lisp
+** cons: construct
+** conj: conjoin

@@ -1,3 +1,6 @@
 #+TITLE: Index
 
 - [[file:4clojure.org][4Clojure]]
+- [[file:lisp.org][Lisp]]
+- [[file:mathematics.org][Mathematics]]
+- [[file:set-theory.org][Set theory]]

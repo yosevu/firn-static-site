@@ -49,3 +49,68 @@ When operating on a list, the conj function will return a new list with one or m
   (= '(1 2 3 4) (conj '(2 3 4)))
   (= '(1 2 3 4 (conj '(3 4) 2 1))))
 #+END_SRC
+** 6. Intro to Vectors
+
+Vectors can be constructed several ways. You can compare them with lists.
+
+#+BEGIN_SRC clojure
+(defn intro-to-vectors []
+  (= [:a :b :c] (list :a :b :c) (vec '(:a :b :c)) (vector :a :b :c)))
+#+END_SRC
+
+** 7. Vectors: conj
+
+When operating on a Vector, the conj function will return a new vector with one or more items "added" to the end.
+
+#+BEGIN_SRC clojure
+(defn vectors-conj []
+  (= [1 2 3 4] (conj [1 2 3] 4))
+  (= [1 2 3 4] (conj [1 2] 3 4)))
+#+END_SRC
+
+~conj~ is a clipping, (technically apocope) of conjoin.
+
+** 8. Intro to Sets
+
+Sets are collections of unique values.
+
+#+BEGIN_SRC clojure
+(defn intro-to-sets []
+  (= #{:a :b :c :d} (set '(:a :a :b :c :c :c :c :d :d)))
+  (= #{:a :b :c :d} (clojure.set/union #{:a :b :c} #{:b :c :d})))
+#+END_SRC
+
+#+BEGIN_QUOTE
+In [[file:set-theory.org][set theory]], the union of a collection of sets is the set of all elements in the collection. - [[https://en.wikipedia.org/wiki/Union_(set_theory)][Union (set theory), Wikipedia]]
+#+END_QUOTE
+
+In the second example above, there are two sets in the collection.
+
+1. ~#{:a :b :c}~
+1. ~#{:b :c :d}~
+
+The union of the sets A and B (A ∪ B) is the set ~#{:a :b :c :d}~.
+
+*** Clojure Notes
+- ~=~ returns ~true~ when called as a unary function (with one argument): ~(= 1)~.
+
+** 9. Sets: conj
+
+When operating on a set, the conj function returns a new set with one or more keys "added".
+
+#+BEGIN_SRC clojure
+(defn sets-conj []
+  (= #{1 2 3 4} (conj #{1 4 3} 2)))
+
+#+END_SRC
+
+** 10. Intro to Maps
+
+Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
+
+#+BEGIN_SRC clojure
+(defn intro-to-maps []
+  (= 20 ((hash-map :a 10 :b 20 :c 30) :b))
+  (= 20 (:b {:a 10 :b 20 :c 30})))
+#+END_SRC
+

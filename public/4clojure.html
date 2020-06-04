@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-01 Mon 08:18 -->
+<!-- 2020-06-03 Wed 20:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>4Clojure</title>
@@ -226,16 +226,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org80ff57f">Elementary</a>
+<li><a href="#orgdb5f900">Elementary</a>
 <ul>
-<li><a href="#org4479802">1. Nothing but the Truth</a></li>
-<li><a href="#org88113db">2. Simple Math</a></li>
-<li><a href="#org252e08e">3. Intro to Strings</a></li>
-<li><a href="#orgba79e9f">4. Intro to Lists</a></li>
-<li><a href="#orgeaa278e">5. Lists: conj</a></li>
+<li><a href="#org670e8b5">1. Nothing but the Truth</a></li>
+<li><a href="#org6b485cf">2. Simple Math</a></li>
+<li><a href="#orga40a152">3. Intro to Strings</a></li>
+<li><a href="#orgff214dd">4. Intro to Lists</a></li>
+<li><a href="#orgd782874">5. Lists: conj</a></li>
+<li><a href="#org687ac24">6. Intro to Vectors</a></li>
+<li><a href="#orgd510e98">7. Vectors: conj</a></li>
+<li><a href="#org8609849">8. Intro to Sets</a>
+<ul>
+<li><a href="#org595bbda">Clojure Notes</a></li>
 </ul>
 </li>
-<li><a href="#orgbac8619">Backlinks</a></li>
+<li><a href="#org9047342">9. Sets: conj</a></li>
+<li><a href="#orgee4c467">10. Intro to Maps</a></li>
+</ul>
+</li>
+<li><a href="#org8661892">Backlinks</a></li>
 </ul>
 </div>
 </div>
@@ -243,88 +252,199 @@
 Annotated solutions to 4Clojure&rsquo;s <a href="clojure.html">Clojure</a> problems.
 </p>
 
-<div id="outline-container-org80ff57f" class="outline-2">
-<h2 id="org80ff57f">Elementary</h2>
-<div class="outline-text-2" id="text-org80ff57f">
+<div id="outline-container-orgdb5f900" class="outline-2">
+<h2 id="orgdb5f900">Elementary</h2>
+<div class="outline-text-2" id="text-orgdb5f900">
 </div>
-<div id="outline-container-org4479802" class="outline-3">
-<h3 id="org4479802">1. Nothing but the Truth</h3>
-<div class="outline-text-3" id="text-org4479802">
+<div id="outline-container-org670e8b5" class="outline-3">
+<h3 id="org670e8b5">1. Nothing but the Truth</h3>
+<div class="outline-text-3" id="text-org670e8b5">
 <p>
 This is a clojure form. Enter a value which will make the form evaluate to true.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #3B6EA8;">(</span><span style="color: #3B6EA8;">defn</span> <span style="color: #29838D;">nothing-but-truth</span> <span style="color: #97365B;">[]</span>
-  <span style="color: #97365B;">(</span>= <span style="color: #97365B;">true</span> <span style="color: #97365B;">true</span><span style="color: #97365B;">)</span><span style="color: #3B6EA8;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">nothing-but-truth</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">true</span> <span style="color: #6c71c4; font-weight: bold;">true</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org88113db" class="outline-3">
-<h3 id="org88113db">2. Simple Math</h3>
-<div class="outline-text-3" id="text-org88113db">
+<div id="outline-container-org6b485cf" class="outline-3">
+<h3 id="org6b485cf">2. Simple Math</h3>
+<div class="outline-text-3" id="text-org6b485cf">
 <p>
 If you are not familiar with polish notation, simple arithmetic might seem confusing.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #3B6EA8;">(</span><span style="color: #3B6EA8;">defn</span> <span style="color: #29838D;">simple-math</span> <span style="color: #97365B;">[]</span>
-  <span style="color: #97365B;">(</span>= <span style="color: #4F894C;">(</span>- <span style="color: #97365B; font-weight: bold;">10</span> <span style="color: #3B6EA8;">(</span>* <span style="color: #97365B; font-weight: bold;">2</span> <span style="color: #97365B; font-weight: bold;">3</span><span style="color: #3B6EA8;">)</span><span style="color: #4F894C;">)</span> <span style="color: #97365B; font-weight: bold;">4</span><span style="color: #97365B;">)</span><span style="color: #3B6EA8;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">simple-math</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #859900;">(</span>- <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #268bd2;">(</span>* <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org252e08e" class="outline-3">
-<h3 id="org252e08e">3. Intro to Strings</h3>
-<div class="outline-text-3" id="text-org252e08e">
+<div id="outline-container-orga40a152" class="outline-3">
+<h3 id="orga40a152">3. Intro to Strings</h3>
+<div class="outline-text-3" id="text-orga40a152">
 <p>
 Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #3B6EA8;">(</span><span style="color: #3B6EA8;">defn</span> <span style="color: #29838D;">intro-to-strings</span> <span style="color: #97365B;">[]</span>
-  <span style="color: #97365B;">(</span>= <span style="color: #4F894C;">"HELLO WORLD"</span> <span style="color: #4F894C;">(</span>.toUpperCase <span style="color: #4F894C;">"hello world"</span><span style="color: #4F894C;">)</span><span style="color: #97365B;">)</span><span style="color: #3B6EA8;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-strings</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #2aa198;">"HELLO WORLD"</span> <span style="color: #859900;">(</span>.toUpperCase <span style="color: #2aa198;">"hello world"</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgba79e9f" class="outline-3">
-<h3 id="orgba79e9f">4. Intro to Lists</h3>
-<div class="outline-text-3" id="text-orgba79e9f">
+<div id="outline-container-orgff214dd" class="outline-3">
+<h3 id="orgff214dd">4. Intro to Lists</h3>
+<div class="outline-text-3" id="text-orgff214dd">
 <p>
 Lists can be constructed with either a function or a quoted form.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #3B6EA8;">(</span><span style="color: #3B6EA8;">defn</span> <span style="color: #29838D;">intro-to-lists</span> <span style="color: #97365B;">[]</span>
-    <span style="color: #97365B;">(</span>= <span style="color: #4F894C;">(</span>list <span style="color: #97365B;">:a</span> <span style="color: #97365B;">:b</span> <span style="color: #97365B;">:c</span><span style="color: #4F894C;">)</span> '<span style="color: #4F894C;">(</span><span style="color: #97365B;">:a</span> <span style="color: #97365B;">:b</span> <span style="color: #97365B;">:c</span><span style="color: #4F894C;">)</span><span style="color: #97365B;">)</span><span style="color: #3B6EA8;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-lists</span> <span style="color: #d33682;">[]</span>
+    <span style="color: #d33682;">(</span>= <span style="color: #859900;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span> '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgeaa278e" class="outline-3">
-<h3 id="orgeaa278e">5. Lists: conj</h3>
-<div class="outline-text-3" id="text-orgeaa278e">
+<div id="outline-container-orgd782874" class="outline-3">
+<h3 id="orgd782874">5. Lists: conj</h3>
+<div class="outline-text-3" id="text-orgd782874">
 <p>
 When operating on a list, the conj function will return a new list with one or more items &ldquo;added&rdquo; to the front.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #3B6EA8;">(</span><span style="color: #3B6EA8;">defn</span> <span style="color: #29838D;">lists-conj</span> <span style="color: #97365B;">[]</span>
-  <span style="color: #97365B;">(</span>= '<span style="color: #4F894C;">(</span><span style="color: #97365B; font-weight: bold;">1</span> <span style="color: #97365B; font-weight: bold;">2</span> <span style="color: #97365B; font-weight: bold;">3</span> <span style="color: #97365B; font-weight: bold;">4</span><span style="color: #4F894C;">)</span> <span style="color: #4F894C;">(</span>conj '<span style="color: #3B6EA8;">(</span><span style="color: #97365B; font-weight: bold;">2</span> <span style="color: #97365B; font-weight: bold;">3</span> <span style="color: #97365B; font-weight: bold;">4</span><span style="color: #3B6EA8;">)</span><span style="color: #4F894C;">)</span><span style="color: #97365B;">)</span>
-  <span style="color: #97365B;">(</span>= '<span style="color: #4F894C;">(</span><span style="color: #97365B; font-weight: bold;">1</span> <span style="color: #97365B; font-weight: bold;">2</span> <span style="color: #97365B; font-weight: bold;">3</span> <span style="color: #97365B; font-weight: bold;">4</span> <span style="color: #3B6EA8;">(</span>conj '<span style="color: #97365B;">(</span><span style="color: #97365B; font-weight: bold;">3</span> <span style="color: #97365B; font-weight: bold;">4</span><span style="color: #97365B;">)</span> <span style="color: #97365B; font-weight: bold;">2</span> <span style="color: #97365B; font-weight: bold;">1</span><span style="color: #3B6EA8;">)</span><span style="color: #4F894C;">)</span><span style="color: #97365B;">)</span><span style="color: #3B6EA8;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">lists-conj</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>conj '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #d33682;">(</span>= '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #268bd2;">(</span>conj '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org687ac24" class="outline-3">
+<h3 id="org687ac24">6. Intro to Vectors</h3>
+<div class="outline-text-3" id="text-org687ac24">
+<p>
+Vectors can be constructed several ways. You can compare them with lists.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-vectors</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>vec '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>vector <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd510e98" class="outline-3">
+<h3 id="orgd510e98">7. Vectors: conj</h3>
+<div class="outline-text-3" id="text-orgd510e98">
+<p>
+When operating on a Vector, the conj function will return a new vector with one or more items &ldquo;added&rdquo; to the end.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">vectors-conj</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>conj <span style="color: #268bd2;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">]</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>conj <span style="color: #268bd2;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #268bd2;">]</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<code>conj</code> is a clipping, (technically apocope) of conjoin.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8609849" class="outline-3">
+<h3 id="org8609849">8. Intro to Sets</h3>
+<div class="outline-text-3" id="text-org8609849">
+<p>
+Sets are collections of unique values.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-sets</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span>set '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span><span style="color: #b58900; font-style: italic;">clojure.set</span>/union #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #268bd2;">}</span> #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #268bd2;">}</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<blockquote>
+<p>
+In <a href="set-theory.html">set theory</a>, the union of a collection of sets is the set of all elements in the collection. - <a href="https://en.wikipedia.org/wiki/Union_(set_theory)">Union (set theory), Wikipedia</a>
+</p>
+</blockquote>
+
+<p>
+In the second example above, there are two sets in the collection.
+</p>
+
+<ol class="org-ol">
+<li><code>#{:a :b :c}</code></li>
+<li><code>#{:b :c :d}</code></li>
+</ol>
+
+<p>
+The union of the sets A and B (A ∪ B) is the set <code>#{:a :b :c :d}</code>.
+</p>
+</div>
+
+<div id="outline-container-org595bbda" class="outline-4">
+<h4 id="org595bbda">Clojure Notes</h4>
+<div class="outline-text-4" id="text-org595bbda">
+<ul class="org-ul">
+<li><code>=</code> returns <code>true</code> when called as a unary function (with one argument): <code>(= 1)</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9047342" class="outline-3">
+<h3 id="org9047342">9. Sets: conj</h3>
+<div class="outline-text-3" id="text-org9047342">
+<p>
+When operating on a set, the conj function returns a new set with one or more keys &ldquo;added&rdquo;.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">sets-conj</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span>conj #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">}</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee4c467" class="outline-3">
+<h3 id="orgee4c467">10. Intro to Maps</h3>
+<div class="outline-text-3" id="text-orgee4c467">
+<p>
+Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-maps</span> <span style="color: #d33682;">[]</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #859900;">(</span><span style="color: #268bd2;">(</span>hash-map <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #268bd2;">)</span> <span style="color: #6c71c4; font-weight: bold;">:b</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #268bd2;">}</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbac8619" class="outline-2">
-<h2 id="orgbac8619">Backlinks</h2>
-<div class="outline-text-2" id="text-orgbac8619">
+
+<div id="outline-container-org8661892" class="outline-2">
+<h2 id="org8661892">Backlinks</h2>
+<div class="outline-text-2" id="text-org8661892">
 <ul class="org-ul">
 <li><a href="private/4clojure-problems.html">4Clojure Problems</a></li>
 <li><a href="index.html">Index</a></li>
@@ -334,7 +454,7 @@ When operating on a list, the conj function will return a new list with one or m
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yosevu Kilonzo</p>
-<p class="date">Created: 2020-06-01 Mon 08:18</p>
+<p class="date">Created: 2020-06-03 Wed 20:58</p>
 </div>
 </body>
 </html>
