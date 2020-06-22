@@ -4,3 +4,4 @@
 #+ROAM_TAGS: "public"
 
 * Mathematics
+- [[https://0.30000000000000004.com/][Floating Point Math]]

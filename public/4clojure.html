@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-03 Wed 20:58 -->
+<!-- 2020-06-22 Mon 15:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>4Clojure</title>
@@ -226,25 +226,27 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgdb5f900">Elementary</a>
-<ul>
-<li><a href="#org670e8b5">1. Nothing but the Truth</a></li>
-<li><a href="#org6b485cf">2. Simple Math</a></li>
-<li><a href="#orga40a152">3. Intro to Strings</a></li>
-<li><a href="#orgff214dd">4. Intro to Lists</a></li>
-<li><a href="#orgd782874">5. Lists: conj</a></li>
-<li><a href="#org687ac24">6. Intro to Vectors</a></li>
-<li><a href="#orgd510e98">7. Vectors: conj</a></li>
-<li><a href="#org8609849">8. Intro to Sets</a>
-<ul>
-<li><a href="#org595bbda">Clojure Notes</a></li>
-</ul>
-</li>
-<li><a href="#org9047342">9. Sets: conj</a></li>
-<li><a href="#orgee4c467">10. Intro to Maps</a></li>
-</ul>
-</li>
-<li><a href="#org8661892">Backlinks</a></li>
+<li><a href="#orged73a12">1. Nothing but the Truth</a></li>
+<li><a href="#orgad45c0e">2. Simple Math</a></li>
+<li><a href="#orgc43b47d">3. Intro to strings</a></li>
+<li><a href="#org8ee8c33">4. Intro to lists</a></li>
+<li><a href="#orgd406a75">5. Lists: conj</a></li>
+<li><a href="#orgea90cb7">6. Intro to vectors</a></li>
+<li><a href="#org6d50657">7. Vectors: conj</a></li>
+<li><a href="#org0c82e61">8. Intro to sets</a></li>
+<li><a href="#orgbdb3fa6">9. Sets: conj</a></li>
+<li><a href="#orge42f0bb">10. Intro to maps</a></li>
+<li><a href="#orgc59444d">19. Last element</a></li>
+<li><a href="#orge01363e">20. Penultimate element</a></li>
+<li><a href="#org3dc711a">21. Nth element</a></li>
+<li><a href="#orgf93a721">22. Count a sequence</a></li>
+<li><a href="#org0d04efb">23. Reverse a sequence</a></li>
+<li><a href="#org945fd79">24. Sum it all up</a></li>
+<li><a href="#org1bcd010">25. Find the odd numbers</a></li>
+<li><a href="#org8ac5df0">26. Fibonacci sequence</a></li>
+<li><a href="#org6147db0">27. TODO</a></li>
+<li><a href="#orgafc52b1">28. Flatten a sequence</a></li>
+<li><a href="#org655d113">Backlinks</a></li>
 </ul>
 </div>
 </div>
@@ -252,13 +254,9 @@
 Annotated solutions to 4Clojure&rsquo;s <a href="clojure.html">Clojure</a> problems.
 </p>
 
-<div id="outline-container-orgdb5f900" class="outline-2">
-<h2 id="orgdb5f900">Elementary</h2>
-<div class="outline-text-2" id="text-orgdb5f900">
-</div>
-<div id="outline-container-org670e8b5" class="outline-3">
-<h3 id="org670e8b5">1. Nothing but the Truth</h3>
-<div class="outline-text-3" id="text-org670e8b5">
+<div id="outline-container-orged73a12" class="outline-2">
+<h2 id="orged73a12">1. Nothing but the Truth</h2>
+<div class="outline-text-2" id="text-orged73a12">
 <p>
 This is a clojure form. Enter a value which will make the form evaluate to true.
 </p>
@@ -270,9 +268,9 @@ This is a clojure form. Enter a value which will make the form evaluate to true.
 </div>
 </div>
 </div>
-<div id="outline-container-org6b485cf" class="outline-3">
-<h3 id="org6b485cf">2. Simple Math</h3>
-<div class="outline-text-3" id="text-org6b485cf">
+<div id="outline-container-orgad45c0e" class="outline-2">
+<h2 id="orgad45c0e">2. Simple Math</h2>
+<div class="outline-text-2" id="text-orgad45c0e">
 <p>
 If you are not familiar with polish notation, simple arithmetic might seem confusing.
 </p>
@@ -284,9 +282,9 @@ If you are not familiar with polish notation, simple arithmetic might seem confu
 </div>
 </div>
 </div>
-<div id="outline-container-orga40a152" class="outline-3">
-<h3 id="orga40a152">3. Intro to Strings</h3>
-<div class="outline-text-3" id="text-orga40a152">
+<div id="outline-container-orgc43b47d" class="outline-2">
+<h2 id="orgc43b47d">3. Intro to strings</h2>
+<div class="outline-text-2" id="text-orgc43b47d">
 <p>
 Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
 </p>
@@ -299,9 +297,9 @@ Clojure strings are Java strings. This means that you can use any of the Java st
 </div>
 </div>
 
-<div id="outline-container-orgff214dd" class="outline-3">
-<h3 id="orgff214dd">4. Intro to Lists</h3>
-<div class="outline-text-3" id="text-orgff214dd">
+<div id="outline-container-org8ee8c33" class="outline-2">
+<h2 id="org8ee8c33">4. Intro to lists</h2>
+<div class="outline-text-2" id="text-org8ee8c33">
 <p>
 Lists can be constructed with either a function or a quoted form.
 </p>
@@ -314,9 +312,9 @@ Lists can be constructed with either a function or a quoted form.
 </div>
 </div>
 
-<div id="outline-container-orgd782874" class="outline-3">
-<h3 id="orgd782874">5. Lists: conj</h3>
-<div class="outline-text-3" id="text-orgd782874">
+<div id="outline-container-orgd406a75" class="outline-2">
+<h2 id="orgd406a75">5. Lists: conj</h2>
+<div class="outline-text-2" id="text-orgd406a75">
 <p>
 When operating on a list, the conj function will return a new list with one or more items &ldquo;added&rdquo; to the front.
 </p>
@@ -329,9 +327,9 @@ When operating on a list, the conj function will return a new list with one or m
 </div>
 </div>
 </div>
-<div id="outline-container-org687ac24" class="outline-3">
-<h3 id="org687ac24">6. Intro to Vectors</h3>
-<div class="outline-text-3" id="text-org687ac24">
+<div id="outline-container-orgea90cb7" class="outline-2">
+<h2 id="orgea90cb7">6. Intro to vectors</h2>
+<div class="outline-text-2" id="text-orgea90cb7">
 <p>
 Vectors can be constructed several ways. You can compare them with lists.
 </p>
@@ -344,9 +342,9 @@ Vectors can be constructed several ways. You can compare them with lists.
 </div>
 </div>
 
-<div id="outline-container-orgd510e98" class="outline-3">
-<h3 id="orgd510e98">7. Vectors: conj</h3>
-<div class="outline-text-3" id="text-orgd510e98">
+<div id="outline-container-org6d50657" class="outline-2">
+<h2 id="org6d50657">7. Vectors: conj</h2>
+<div class="outline-text-2" id="text-org6d50657">
 <p>
 When operating on a Vector, the conj function will return a new vector with one or more items &ldquo;added&rdquo; to the end.
 </p>
@@ -364,9 +362,9 @@ When operating on a Vector, the conj function will return a new vector with one 
 </div>
 </div>
 
-<div id="outline-container-org8609849" class="outline-3">
-<h3 id="org8609849">8. Intro to Sets</h3>
-<div class="outline-text-3" id="text-org8609849">
+<div id="outline-container-org0c82e61" class="outline-2">
+<h2 id="org0c82e61">8. Intro to sets</h2>
+<div class="outline-text-2" id="text-org0c82e61">
 <p>
 Sets are collections of unique values.
 </p>
@@ -396,21 +394,19 @@ In the second example above, there are two sets in the collection.
 <p>
 The union of the sets A and B (A ∪ B) is the set <code>#{:a :b :c :d}</code>.
 </p>
-</div>
 
-<div id="outline-container-org595bbda" class="outline-4">
-<h4 id="org595bbda">Clojure Notes</h4>
-<div class="outline-text-4" id="text-org595bbda">
+<p>
+<b>Clojure Notes</b>
+</p>
 <ul class="org-ul">
 <li><code>=</code> returns <code>true</code> when called as a unary function (with one argument): <code>(= 1)</code>.</li>
 </ul>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org9047342" class="outline-3">
-<h3 id="org9047342">9. Sets: conj</h3>
-<div class="outline-text-3" id="text-org9047342">
+<div id="outline-container-orgbdb3fa6" class="outline-2">
+<h2 id="orgbdb3fa6">9. Sets: conj</h2>
+<div class="outline-text-2" id="text-orgbdb3fa6">
 <p>
 When operating on a set, the conj function returns a new set with one or more keys &ldquo;added&rdquo;.
 </p>
@@ -424,9 +420,9 @@ When operating on a set, the conj function returns a new set with one or more ke
 </div>
 </div>
 
-<div id="outline-container-orgee4c467" class="outline-3">
-<h3 id="orgee4c467">10. Intro to Maps</h3>
-<div class="outline-text-3" id="text-orgee4c467">
+<div id="outline-container-orge42f0bb" class="outline-2">
+<h2 id="orge42f0bb">10. Intro to maps</h2>
+<div class="outline-text-2" id="text-orge42f0bb">
 <p>
 Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
 </p>
@@ -437,15 +433,318 @@ Maps store key-value pairs. Both maps and keywords can be used as lookup functio
   <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #268bd2;">}</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
-</div>
+
+<p>
+&lt;hr&gt;
+</p>
 </div>
 </div>
 
-
-<div id="outline-container-org8661892" class="outline-2">
-<h2 id="org8661892">Backlinks</h2>
-<div class="outline-text-2" id="text-org8661892">
+<div id="outline-container-orgc59444d" class="outline-2">
+<h2 id="orgc59444d">19. Last element</h2>
+<div class="outline-text-2" id="text-orgc59444d">
 <ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs core-functions</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns the last element in a sequence.
+</p>
+
+<p>
+Special Restrictions: last
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">last-element</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>nth s <span style="color: #859900;">(</span>- <span style="color: #268bd2;">(</span>count s<span style="color: #268bd2;">)</span> <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Other solutions</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">last-element</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>nth s <span style="color: #859900;">(</span>dec <span style="color: #268bd2;">(</span>count s<span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge01363e" class="outline-2">
+<h2 id="orge01363e">20. Penultimate element</h2>
+<div class="outline-text-2" id="text-orge01363e">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns the second to last element from a sequence.
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">penultimate-element</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>nth s <span style="color: #859900;">(</span>- <span style="color: #268bd2;">(</span>count s<span style="color: #268bd2;">)</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Other solutions</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">penultimate-element</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>comp second reverse<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3dc711a" class="outline-2">
+<h2 id="org3dc711a">21. Nth element</h2>
+<div class="outline-text-2" id="text-org3dc711a">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs core-functions</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns the Nth element from a sequence.
+</p>
+
+<p>
+Special Restrictions: nth
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">nth-element</span> <span style="color: #d33682;">[</span>s index<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>get <span style="color: #859900;">(</span>vec s<span style="color: #859900;">)</span> index<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Other solutions</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">nth-element</span> <span style="color: #d33682;">[</span>coll n<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>first <span style="color: #859900;">(</span>drop n coll<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf93a721" class="outline-2">
+<h2 id="orgf93a721">22. Count a sequence</h2>
+<div class="outline-text-2" id="text-orgf93a721">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs core-functions</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns the total number of elements in a sequence.
+</p>
+
+<p>
+Special Restrictions: count
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">count-a-sequence</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>reduce <span style="color: #859900;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #268bd2;">[</span>total item<span style="color: #268bd2;">]</span>
+            <span style="color: #268bd2;">(</span>inc total<span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">0</span> s<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Other solutions</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">count-a-sequence</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>reduce + <span style="color: #859900;">(</span>map <span style="color: #268bd2;">(</span>constantly <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #268bd2;">)</span> s<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0d04efb" class="outline-2">
+<h2 id="org0d04efb">23. Reverse a sequence</h2>
+<div class="outline-text-2" id="text-org0d04efb">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs core-functions</li>
+<li>Effort: 🧠🧠🧠</li>
+</ul>
+
+<p>
+Write a function which reverses a sequence.
+</p>
+
+<p>
+Special Restrictions: reverse rseq
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">reverse-a-sequence</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org945fd79" class="outline-2">
+<h2 id="org945fd79">24. Sum it all up</h2>
+<div class="outline-text-2" id="text-org945fd79">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns the sum of a sequence of numbers.
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">sum-it-all-up</span> <span style="color: #d33682;">[</span>nums<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>reduce + nums<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1bcd010" class="outline-2">
+<h2 id="org1bcd010">25. Find the odd numbers</h2>
+<div class="outline-text-2" id="text-org1bcd010">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs</li>
+<li>Effort: 🧠</li>
+</ul>
+
+<p>
+Write a function which returns only the odd numbers from a sequence.
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">find-the-odd-numbers</span> <span style="color: #d33682;">[</span>nums<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>filter odd? nums<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ac5df0" class="outline-2">
+<h2 id="org8ac5df0">26. Fibonacci sequence</h2>
+<div class="outline-text-2" id="text-org8ac5df0">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: Fibonacci seqs</li>
+<li>Effort:</li>
+</ul>
+
+<p>
+Write a function which returns the first X fibonacci numbers.
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6147db0" class="outline-2">
+<h2 id="org6147db0">27. TODO</h2>
+</div>
+
+<div id="outline-container-orgafc52b1" class="outline-2">
+<h2 id="orgafc52b1">28. Flatten a sequence</h2>
+<div class="outline-text-2" id="text-orgafc52b1">
+<ul class="org-ul">
+<li>Difficulty: Easy</li>
+<li>Topics: seqs core-functions</li>
+<li>Effort: 🧠🧠🧠</li>
+</ul>
+
+<p>
+Write a function which flattens a sequence.
+</p>
+
+<p>
+Special Restrictions: flatten
+</p>
+
+<p>
+<b>Iteration 1</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">my-flatten</span> <span style="color: #d33682;">[</span>coll<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>seq <span style="color: #859900;">(</span>reduce <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #d33682;">[</span>result item<span style="color: #d33682;">]</span>
+            <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #859900;">(</span>coll? item<span style="color: #859900;">)</span>
+                <span style="color: #859900;">(</span>into result <span style="color: #268bd2;">(</span>my-flatten-1 <span style="color: #d33682;">(</span>first <span style="color: #859900;">(</span>list item<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span>
+                <span style="color: #859900;">(</span>conj result item<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+          <span style="color: #268bd2;">[]</span>
+          coll<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Iteration 2</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">my-flatten</span> <span style="color: #d33682;">[</span>item<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">cond</span>
+    <span style="color: #859900;">(</span>coll? item<span style="color: #859900;">)</span> <span style="color: #859900;">(</span>mapcat my-flatten-2 item<span style="color: #859900;">)</span>
+    <span style="color: #6c71c4; font-weight: bold;">:else</span> <span style="color: #859900;">[</span>item<span style="color: #859900;">]</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org655d113" class="outline-2">
+<h2 id="org655d113">Backlinks</h2>
+<div class="outline-text-2" id="text-org655d113">
+<ul class="org-ul">
+<li><a href="private/programming-exercises.html">Programming Exercises</a></li>
 <li><a href="private/4clojure-problems.html">4Clojure Problems</a></li>
 <li><a href="index.html">Index</a></li>
 </ul>
@@ -454,7 +753,7 @@ Maps store key-value pairs. Both maps and keywords can be used as lookup functio
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yosevu Kilonzo</p>
-<p class="date">Created: 2020-06-03 Wed 20:58</p>
+<p class="date">Created: 2020-06-22 Mon 15:43</p>
 </div>
 </body>
 </html>

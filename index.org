@@ -3,4 +3,5 @@
 - [[file:4clojure.org][4Clojure]]
 - [[file:lisp.org][Lisp]]
 - [[file:mathematics.org][Mathematics]]
+- [[file:org-roam-demo.org][Org-roam Demo]]
 - [[file:set-theory.org][Set theory]]
