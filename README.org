@@ -1,0 +1,4 @@
+#+title: notes.yosevu.org
+#+created: 2020-09-23
+
+These are my notes, written in Org-mode, published with Emacs.
