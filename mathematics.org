@@ -1,7 +1,0 @@
-#+TITLE: Mathematics
-#+CREATED: 2020-06-02
-#+ROAM_ALIAS: "mathematics" "Maths" "Math" "math" "mathematical"
-#+ROAM_TAGS: "public"
-
-* Mathematics
-- [[https://0.30000000000000004.com/][Floating Point Math]]

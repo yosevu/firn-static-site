@@ -1,8 +1,0 @@
-#+TITLE: Set theory
-#+CREATED: 2020-06-01
-#+ROAM_ALIAS: "set theory"
-#+ROAM_TAGS: "public"
-
-#+BEGIN_QUOTE
-Set theory is a branch of [[file:mathematics.org][mathematical]] logic that studies sets, which informally are collections of objects. - [[https://en.wikipedia.org/wiki/Set_theory][Set theory, Wikipedia]]
-#+END_QUOTE

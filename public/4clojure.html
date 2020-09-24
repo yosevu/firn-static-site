@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-22 Mon 15:43 -->
+<!-- 2020-09-24 Thu 00:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>4Clojure</title>
@@ -226,37 +226,50 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orged73a12">1. Nothing but the Truth</a></li>
-<li><a href="#orgad45c0e">2. Simple Math</a></li>
-<li><a href="#orgc43b47d">3. Intro to strings</a></li>
-<li><a href="#org8ee8c33">4. Intro to lists</a></li>
-<li><a href="#orgd406a75">5. Lists: conj</a></li>
-<li><a href="#orgea90cb7">6. Intro to vectors</a></li>
-<li><a href="#org6d50657">7. Vectors: conj</a></li>
-<li><a href="#org0c82e61">8. Intro to sets</a></li>
-<li><a href="#orgbdb3fa6">9. Sets: conj</a></li>
-<li><a href="#orge42f0bb">10. Intro to maps</a></li>
-<li><a href="#orgc59444d">19. Last element</a></li>
-<li><a href="#orge01363e">20. Penultimate element</a></li>
-<li><a href="#org3dc711a">21. Nth element</a></li>
-<li><a href="#orgf93a721">22. Count a sequence</a></li>
-<li><a href="#org0d04efb">23. Reverse a sequence</a></li>
-<li><a href="#org945fd79">24. Sum it all up</a></li>
-<li><a href="#org1bcd010">25. Find the odd numbers</a></li>
-<li><a href="#org8ac5df0">26. Fibonacci sequence</a></li>
-<li><a href="#org6147db0">27. TODO</a></li>
-<li><a href="#orgafc52b1">28. Flatten a sequence</a></li>
-<li><a href="#org655d113">Backlinks</a></li>
+<li><a href="#org9cba622">1. Nothing but the Truth</a></li>
+<li><a href="#org3fad82d">2. Simple Math</a></li>
+<li><a href="#org5937db7">3. Intro to strings</a></li>
+<li><a href="#org9ba7923">4. Intro to lists</a></li>
+<li><a href="#org7a6150e">5. Lists: conj</a></li>
+<li><a href="#orgacb1a8c">6. Intro to vectors</a></li>
+<li><a href="#org5eefe2b">7. Vectors: conj</a></li>
+<li><a href="#org4a474f4">8. Intro to sets</a></li>
+<li><a href="#org49b0f83">9. Sets: conj</a></li>
+<li><a href="#org3494169">10. Intro to maps</a></li>
+<li><a href="#orga9ab5e9">11. Maps: conj</a></li>
+<li><a href="#orgeeffbd6">12. Intro to Sequences</a></li>
+<li><a href="#org9ac32ac">13. Sequences: rest</a></li>
+<li><a href="#org78d338a">14. Intro to Functions</a></li>
+<li><a href="#org4ade1b3">15. Double Down</a></li>
+<li><a href="#org49a3a9e">16. Hello World</a></li>
+<li><a href="#org5dc42b1">17. Sequences: map</a></li>
+<li><a href="#org8b1125f">18. Sequences: filter</a></li>
+<li><a href="#orgaba719f">19. Last element</a></li>
+<li><a href="#orge7565a4">20. Penultimate element</a></li>
+<li><a href="#org8a8bc2e">21. Nth element</a></li>
+<li><a href="#org7599a2d">22. Count a sequence</a></li>
+<li><a href="#orgb357590">23. Reverse a sequence</a></li>
+<li><a href="#org747914d">24. Sum it all up</a></li>
+<li><a href="#org477b091">25. Find the odd numbers</a></li>
+<li><a href="#org41cc103">26. Fibonacci sequence</a></li>
+<li><a href="#org7bed4a2">27.</a></li>
+<li><a href="#org5b173d9">28. Flatten a sequence</a></li>
+<li><a href="#org0a338be">References</a></li>
 </ul>
 </div>
 </div>
 <p>
-Annotated solutions to 4Clojure&rsquo;s <a href="clojure.html">Clojure</a> problems.
+Annotated solutions to 4Clojure&rsquo;s Clojure problems.
 </p>
 
-<div id="outline-container-orged73a12" class="outline-2">
-<h2 id="orged73a12">1. Nothing but the Truth</h2>
-<div class="outline-text-2" id="text-orged73a12">
+<div id="outline-container-org9cba622" class="outline-2">
+<h2 id="org9cba622">1. Nothing but the Truth</h2>
+<div class="outline-text-2" id="text-org9cba622">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Equality</li>
+</ul>
+
 <p>
 This is a clojure form. Enter a value which will make the form evaluate to true.
 </p>
@@ -266,115 +279,166 @@ This is a clojure form. Enter a value which will make the form evaluate to true.
   <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">true</span> <span style="color: #6c71c4; font-weight: bold;">true</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
-</div>
-</div>
-<div id="outline-container-orgad45c0e" class="outline-2">
-<h2 id="orgad45c0e">2. Simple Math</h2>
-<div class="outline-text-2" id="text-orgad45c0e">
-<p>
-If you are not familiar with polish notation, simple arithmetic might seem confusing.
-</p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">simple-math</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #859900;">(</span>- <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #268bd2;">(</span>* <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">true</span> <span style="color: #6c71c4; font-weight: bold;">true</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc43b47d" class="outline-2">
-<h2 id="orgc43b47d">3. Intro to strings</h2>
-<div class="outline-text-2" id="text-orgc43b47d">
+<div id="outline-container-org3fad82d" class="outline-2">
+<h2 id="org3fad82d">2. Simple Math</h2>
+<div class="outline-text-2" id="text-org3fad82d">
+<p>
+Difficulty: Elementary
+Topics: Math
+</p>
+
+<p>
+If you are not familiar with <a href="http://en.wikipedia.org/wiki/Polish_notation">polish notation</a>, simple arithmetic might seem confusing.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>=
+ <span style="color: #d33682;">(</span>- <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #859900;">(</span>* <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5937db7" class="outline-2">
+<h2 id="org5937db7">3. Intro to strings</h2>
+<div class="outline-text-2" id="text-org5937db7">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Strings</li>
+</ul>
+
 <p>
 Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-strings</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #2aa198;">"HELLO WORLD"</span> <span style="color: #859900;">(</span>.toUpperCase <span style="color: #2aa198;">"hello world"</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #2aa198;">"HELLO WORLD"</span>
+   <span style="color: #d33682;">(</span>.toUpperCase <span style="color: #2aa198;">"hello world"</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
+<div id="outline-container-org9ba7923" class="outline-2">
+<h2 id="org9ba7923">4. Intro to lists</h2>
+<div class="outline-text-2" id="text-org9ba7923">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Lists</li>
+</ul>
 
-<div id="outline-container-org8ee8c33" class="outline-2">
-<h2 id="org8ee8c33">4. Intro to lists</h2>
-<div class="outline-text-2" id="text-org8ee8c33">
 <p>
 Lists can be constructed with either a function or a quoted form.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-lists</span> <span style="color: #d33682;">[]</span>
-    <span style="color: #d33682;">(</span>= <span style="color: #859900;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span> '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #d33682;">)</span>
+   '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
+<div id="outline-container-org7a6150e" class="outline-2">
+<h2 id="org7a6150e">5. Lists: conj</h2>
+<div class="outline-text-2" id="text-org7a6150e">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Lists</li>
+</ul>
 
-<div id="outline-container-orgd406a75" class="outline-2">
-<h2 id="orgd406a75">5. Lists: conj</h2>
-<div class="outline-text-2" id="text-orgd406a75">
 <p>
 When operating on a list, the conj function will return a new list with one or more items &ldquo;added&rdquo; to the front.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">lists-conj</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>conj '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
-  <span style="color: #d33682;">(</span>= '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #268bd2;">(</span>conj '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>conj '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>conj '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgea90cb7" class="outline-2">
-<h2 id="orgea90cb7">6. Intro to vectors</h2>
-<div class="outline-text-2" id="text-orgea90cb7">
+<div id="outline-container-orgacb1a8c" class="outline-2">
+<h2 id="orgacb1a8c">6. Intro to vectors</h2>
+<div class="outline-text-2" id="text-orgacb1a8c">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Vectors</li>
+</ul>
+
 <p>
 Vectors can be constructed several ways. You can compare them with lists.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-vectors</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>vec '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>vector <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #d33682;">[</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #d33682;">]</span>
+   <span style="color: #d33682;">(</span>list <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>vec '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>vector <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
+<div id="outline-container-org5eefe2b" class="outline-2">
+<h2 id="org5eefe2b">7. Vectors: conj</h2>
+<div class="outline-text-2" id="text-org5eefe2b">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Vectors</li>
+</ul>
 
-<div id="outline-container-org6d50657" class="outline-2">
-<h2 id="org6d50657">7. Vectors: conj</h2>
-<div class="outline-text-2" id="text-org6d50657">
 <p>
 When operating on a Vector, the conj function will return a new vector with one or more items &ldquo;added&rdquo; to the end.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">vectors-conj</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>conj <span style="color: #268bd2;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">]</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">]</span> <span style="color: #859900;">(</span>conj <span style="color: #268bd2;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #268bd2;">]</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #d33682;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">]</span>
+   <span style="color: #d33682;">(</span>conj <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #859900;">]</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">]</span>
+   <span style="color: #d33682;">(</span>conj <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #859900;">]</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 
 <p>
-<code>conj</code> is a clipping, (technically apocope) of conjoin.
+Notes
+</p>
+
+<p>
+<code>conj</code> is a clipping, (an apocope) of conjoin.
 </p>
 </div>
 </div>
+<div id="outline-container-org4a474f4" class="outline-2">
+<h2 id="org4a474f4">8. Intro to sets</h2>
+<div class="outline-text-2" id="text-org4a474f4">
+<p>
+Difficulty: Elementary
+Topics: Sets
+</p>
 
-<div id="outline-container-org0c82e61" class="outline-2">
-<h2 id="org0c82e61">8. Intro to sets</h2>
-<div class="outline-text-2" id="text-org0c82e61">
 <p>
 Sets are collections of unique values.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-sets</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span>set '<span style="color: #268bd2;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
-  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span><span style="color: #b58900; font-style: italic;">clojure.set</span>/union #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #268bd2;">}</span> #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #268bd2;">}</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= #<span style="color: #d33682;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #d33682;">}</span>
+   <span style="color: #d33682;">(</span>set '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= #<span style="color: #d33682;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #d33682;">}</span>
+   <span style="color: #d33682;">(</span><span style="color: #b58900; font-style: italic;">clojure.set</span>/union #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span><span style="color: #859900;">}</span> #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">:d</span><span style="color: #859900;">}</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
+
+<p>
+Notes
+</p>
 
 <blockquote>
 <p>
@@ -396,56 +460,266 @@ The union of the sets A and B (A ∪ B) is the set <code>#{:a :b :c :d}</code>.
 </p>
 
 <p>
-<b>Clojure Notes</b>
+<code>=</code> returns <code>true</code> when called as a unary function (with one argument): <code>(= 1)</code>.
 </p>
+</div>
+</div>
+<div id="outline-container-org49b0f83" class="outline-2">
+<h2 id="org49b0f83">9. Sets: conj</h2>
+<div class="outline-text-2" id="text-org49b0f83">
 <ul class="org-ul">
-<li><code>=</code> returns <code>true</code> when called as a unary function (with one argument): <code>(= 1)</code>.</li>
+<li>Difficulty: Elementary</li>
+<li>Topic: Maps</li>
 </ul>
-</div>
-</div>
 
-<div id="outline-container-orgbdb3fa6" class="outline-2">
-<h2 id="orgbdb3fa6">9. Sets: conj</h2>
-<div class="outline-text-2" id="text-orgbdb3fa6">
 <p>
 When operating on a set, the conj function returns a new set with one or more keys &ldquo;added&rdquo;.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">sets-conj</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #859900;">}</span> <span style="color: #859900;">(</span>conj #<span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #268bd2;">}</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
-
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= #<span style="color: #d33682;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #d33682;">}</span>
+   <span style="color: #d33682;">(</span>conj #<span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #859900;">}</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
+<div id="outline-container-org3494169" class="outline-2">
+<h2 id="org3494169">10. Intro to maps</h2>
+<div class="outline-text-2" id="text-org3494169">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Maps</li>
+</ul>
 
-<div id="outline-container-orge42f0bb" class="outline-2">
-<h2 id="orge42f0bb">10. Intro to maps</h2>
-<div class="outline-text-2" id="text-orge42f0bb">
 <p>
 Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">intro-to-maps</span> <span style="color: #d33682;">[]</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #859900;">(</span><span style="color: #268bd2;">(</span>hash-map <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #268bd2;">)</span> <span style="color: #6c71c4; font-weight: bold;">:b</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
-  <span style="color: #d33682;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #268bd2;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #268bd2;">}</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span>
+   <span style="color: #d33682;">(</span><span style="color: #859900;">(</span>hash-map <span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">:b</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">20</span>
+   <span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">30</span><span style="color: #859900;">}</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga9ab5e9" class="outline-2">
+<h2 id="orga9ab5e9">11. Maps: conj</h2>
+<div class="outline-text-2" id="text-orga9ab5e9">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Maps</li>
+</ul>
+
+<p>
+When operating on a map, the conj function returns a new map with one or more key-value pairs &ldquo;added&rdquo;.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #d33682;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">1</span>, <span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">2</span>, <span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">}</span>
+   <span style="color: #d33682;">(</span>conj <span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:a</span> <span style="color: #6c71c4; font-weight: bold;">1</span><span style="color: #859900;">}</span> <span style="color: #859900;">{</span><span style="color: #6c71c4; font-weight: bold;">:b</span> <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #859900;">}</span> <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">:c</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #859900;">]</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeeffbd6" class="outline-2">
+<h2 id="orgeeffbd6">12. Intro to Sequences</h2>
+<div class="outline-text-2" id="text-orgeeffbd6">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: seqs</li>
+</ul>
+
+<p>
+All Clojure collections support sequencing. You can operate on sequences with functions like first, second, and last.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojue">(= 3 (first '(3 2 1)))
+(= 3 (second [2 3 4]))
+(= 3 (last (list 1 2 3)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9ac32ac" class="outline-2">
+<h2 id="org9ac32ac">13. Sequences: rest</h2>
+<div class="outline-text-2" id="text-org9ac32ac">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: seqs</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #d33682;">[</span><span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">30</span> <span style="color: #6c71c4; font-weight: bold;">40</span><span style="color: #d33682;">]</span>
+   <span style="color: #d33682;">(</span>rest <span style="color: #859900;">[</span><span style="color: #6c71c4; font-weight: bold;">10</span> <span style="color: #6c71c4; font-weight: bold;">20</span> <span style="color: #6c71c4; font-weight: bold;">30</span> <span style="color: #6c71c4; font-weight: bold;">40</span><span style="color: #859900;">]</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 
 <p>
-&lt;hr&gt;
+Notes
+</p>
+
+<p>
+<code>rest</code> returns a sequence. <code>[20 30 40]</code> and <code>'(20 30 40)</code> are equal because they are the same sequence.
 </p>
 </div>
 </div>
+<div id="outline-container-org78d338a" class="outline-2">
+<h2 id="org78d338a">14. Intro to Functions</h2>
+<div class="outline-text-2" id="text-org78d338a">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Functions</li>
+</ul>
 
-<div id="outline-container-orgc59444d" class="outline-2">
-<h2 id="orgc59444d">19. Last element</h2>
-<div class="outline-text-2" id="text-orgc59444d">
+<p>
+Clojure has many different ways to create functions.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure">
+<span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">8</span>
+   <span style="color: #d33682;">(</span><span style="color: #859900;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #b58900;">add-five</span> <span style="color: #268bd2;">[</span>x<span style="color: #268bd2;">]</span> <span style="color: #268bd2;">(</span>+ x <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">8</span>
+   <span style="color: #d33682;">(</span><span style="color: #859900;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #268bd2;">[</span>x<span style="color: #268bd2;">]</span> <span style="color: #268bd2;">(</span>+ x <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">8</span>
+   <span style="color: #d33682;">(</span>#<span style="color: #859900;">(</span>+ <span style="color: #268bd2;">%</span> <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">8</span>
+   <span style="color: #d33682;">(</span><span style="color: #859900;">(</span>partial + <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+Notes
+</p>
+
+<p>
+There is also <code>defn</code>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= <span style="color: #6c71c4; font-weight: bold;">8</span>
+   <span style="color: #d33682;">(</span><span style="color: #859900;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">add-five</span> <span style="color: #268bd2;">[</span>x<span style="color: #268bd2;">]</span>
+      <span style="color: #268bd2;">(</span>+ x <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4ade1b3" class="outline-2">
+<h2 id="org4ade1b3">15. Double Down</h2>
+<div class="outline-text-2" id="text-org4ade1b3">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Functions</li>
+</ul>
+
+<p>
+Write a function which doubles a number.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">double-down</span> <span style="color: #d33682;">[</span>n<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>+ n n<span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span> <span style="color: #96A7A9; font-style: italic;">; (* n 2)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>double-down <span style="color: #6c71c4; font-weight: bold;">2</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">4</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>double-down <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">6</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>double-down <span style="color: #6c71c4; font-weight: bold;">11</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">22</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>double-down <span style="color: #6c71c4; font-weight: bold;">7</span><span style="color: #d33682;">)</span> <span style="color: #6c71c4; font-weight: bold;">14</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org49a3a9e" class="outline-2">
+<h2 id="org49a3a9e">16. Hello World</h2>
+<div class="outline-text-2" id="text-org49a3a9e">
+<p>
+Difficulty: Elementary
+Topics: Functions
+</p>
+
+<p>
+Solution 1
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">hello-world</span> <span style="color: #d33682;">[</span>name<span style="color: #d33682;">]</span>
+  <span style="color: #d33682;">(</span>str <span style="color: #2aa198;">"Hello, "</span> name <span style="color: #2aa198;">"!"</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>hello-world <span style="color: #2aa198;">"Dave"</span><span style="color: #d33682;">)</span> <span style="color: #2aa198;">"Hello, Dave!"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>hello-world <span style="color: #2aa198;">"Jenn"</span><span style="color: #d33682;">)</span>, <span style="color: #2aa198;">"Hello, Jenn!"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span>= <span style="color: #d33682;">(</span>hello-world <span style="color: #2aa198;">"Rhea"</span><span style="color: #d33682;">)</span>, <span style="color: #2aa198;">"Hello, Rhea!"</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+Solution 2
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #d33682;">[</span>name<span style="color: #d33682;">]</span> <span style="color: #d33682;">(</span>str <span style="color: #2aa198;">"Hello, "</span> name <span style="color: #2aa198;">"!"</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+
+<p>
+Solution 3
+</p>
+<div class="org-src-container">
+<pre class="src src-clojure">#<span style="color: #268bd2;">(</span>str <span style="color: #2aa198;">"Hello, "</span> <span style="color: #268bd2;">%</span> <span style="color: #2aa198;">"!"</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5dc42b1" class="outline-2">
+<h2 id="org5dc42b1">17. Sequences: map</h2>
+<div class="outline-text-2" id="text-org5dc42b1">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Sequences Core Functions</li>
+</ul>
+
+<p>
+The map function takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">6</span> <span style="color: #6c71c4; font-weight: bold;">7</span> <span style="color: #6c71c4; font-weight: bold;">8</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>map #<span style="color: #859900;">(</span>+ <span style="color: #268bd2;">%</span> <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #859900;">)</span> '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">1</span> <span style="color: #6c71c4; font-weight: bold;">2</span> <span style="color: #6c71c4; font-weight: bold;">3</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b1125f" class="outline-2">
+<h2 id="org8b1125f">18. Sequences: filter</h2>
+<div class="outline-text-2" id="text-org8b1125f">
+<ul class="org-ul">
+<li>Difficulty: Elementary</li>
+<li>Topics: Sequences</li>
+</ul>
+
+<p>
+The filter function takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-clojure"><span style="color: #268bd2;">(</span>= '<span style="color: #d33682;">(</span><span style="color: #6c71c4; font-weight: bold;">6</span> <span style="color: #6c71c4; font-weight: bold;">7</span><span style="color: #d33682;">)</span>
+   <span style="color: #d33682;">(</span>filter #<span style="color: #859900;">(</span>&gt; <span style="color: #268bd2;">%</span> <span style="color: #6c71c4; font-weight: bold;">5</span><span style="color: #859900;">)</span> '<span style="color: #859900;">(</span><span style="color: #6c71c4; font-weight: bold;">3</span> <span style="color: #6c71c4; font-weight: bold;">4</span> <span style="color: #6c71c4; font-weight: bold;">5</span> <span style="color: #6c71c4; font-weight: bold;">6</span> <span style="color: #6c71c4; font-weight: bold;">7</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaba719f" class="outline-2">
+<h2 id="orgaba719f">19. Last element</h2>
+<div class="outline-text-2" id="text-orgaba719f">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
-<li>Topics: seqs core-functions</li>
+<li>Topics: Sequences, Core Functions</li>
 <li>Effort: 🧠</li>
 </ul>
 
@@ -473,15 +747,14 @@ Special Restrictions: last
 
 <div class="org-src-container">
 <pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">last-element</span> <span style="color: #d33682;">[</span>s<span style="color: #d33682;">]</span>
-  <span style="color: #d33682;">(</span>nth s <span style="color: #859900;">(</span>dec <span style="color: #268bd2;">(</span>count s<span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #d33682;">(</span>nth s <span style="color: #859900;">(</span>dec <span style="color: #268bd2;">(</span>count s<span style="color: #268bd2;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-
-<div id="outline-container-orge01363e" class="outline-2">
-<h2 id="orge01363e">20. Penultimate element</h2>
-<div class="outline-text-2" id="text-orge01363e">
+<div id="outline-container-orge7565a4" class="outline-2">
+<h2 id="orge7565a4">20. Penultimate element</h2>
+<div class="outline-text-2" id="text-orge7565a4">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs</li>
@@ -513,10 +786,9 @@ Write a function which returns the second to last element from a sequence.
 </div>
 </div>
 </div>
-
-<div id="outline-container-org3dc711a" class="outline-2">
-<h2 id="org3dc711a">21. Nth element</h2>
-<div class="outline-text-2" id="text-org3dc711a">
+<div id="outline-container-org8a8bc2e" class="outline-2">
+<h2 id="org8a8bc2e">21. Nth element</h2>
+<div class="outline-text-2" id="text-org8a8bc2e">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs core-functions</li>
@@ -552,10 +824,9 @@ Special Restrictions: nth
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgf93a721" class="outline-2">
-<h2 id="orgf93a721">22. Count a sequence</h2>
-<div class="outline-text-2" id="text-orgf93a721">
+<div id="outline-container-org7599a2d" class="outline-2">
+<h2 id="org7599a2d">22. Count a sequence</h2>
+<div class="outline-text-2" id="text-org7599a2d">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs core-functions</li>
@@ -592,10 +863,9 @@ Special Restrictions: count
 </div>
 </div>
 </div>
-
-<div id="outline-container-org0d04efb" class="outline-2">
-<h2 id="org0d04efb">23. Reverse a sequence</h2>
-<div class="outline-text-2" id="text-org0d04efb">
+<div id="outline-container-orgb357590" class="outline-2">
+<h2 id="orgb357590">23. Reverse a sequence</h2>
+<div class="outline-text-2" id="text-orgb357590">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs core-functions</li>
@@ -620,10 +890,9 @@ Special Restrictions: reverse rseq
 </div>
 </div>
 </div>
-
-<div id="outline-container-org945fd79" class="outline-2">
-<h2 id="org945fd79">24. Sum it all up</h2>
-<div class="outline-text-2" id="text-org945fd79">
+<div id="outline-container-org747914d" class="outline-2">
+<h2 id="org747914d">24. Sum it all up</h2>
+<div class="outline-text-2" id="text-org747914d">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs</li>
@@ -645,10 +914,9 @@ Write a function which returns the sum of a sequence of numbers.
 </div>
 </div>
 </div>
-
-<div id="outline-container-org1bcd010" class="outline-2">
-<h2 id="org1bcd010">25. Find the odd numbers</h2>
-<div class="outline-text-2" id="text-org1bcd010">
+<div id="outline-container-org477b091" class="outline-2">
+<h2 id="org477b091">25. Find the odd numbers</h2>
+<div class="outline-text-2" id="text-org477b091">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs</li>
@@ -670,10 +938,9 @@ Write a function which returns only the odd numbers from a sequence.
 </div>
 </div>
 </div>
-
-<div id="outline-container-org8ac5df0" class="outline-2">
-<h2 id="org8ac5df0">26. Fibonacci sequence</h2>
-<div class="outline-text-2" id="text-org8ac5df0">
+<div id="outline-container-org41cc103" class="outline-2">
+<h2 id="org41cc103">26. Fibonacci sequence</h2>
+<div class="outline-text-2" id="text-org41cc103">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: Fibonacci seqs</li>
@@ -687,16 +954,21 @@ Write a function which returns the first X fibonacci numbers.
 <p>
 <b>Iteration 1</b>
 </p>
-</div>
-</div>
 
-<div id="outline-container-org6147db0" class="outline-2">
-<h2 id="org6147db0">27. TODO</h2>
-</div>
+<div class="source">
+<p>
+(defn find-the-odd-numbers)
+</p>
 
-<div id="outline-container-orgafc52b1" class="outline-2">
-<h2 id="orgafc52b1">28. Flatten a sequence</h2>
-<div class="outline-text-2" id="text-orgafc52b1">
+</div>
+</div>
+</div>
+<div id="outline-container-org7bed4a2" class="outline-2">
+<h2 id="org7bed4a2">27.</h2>
+</div>
+<div id="outline-container-org5b173d9" class="outline-2">
+<h2 id="org5b173d9">28. Flatten a sequence</h2>
+<div class="outline-text-2" id="text-org5b173d9">
 <ul class="org-ul">
 <li>Difficulty: Easy</li>
 <li>Topics: seqs core-functions</li>
@@ -719,7 +991,7 @@ Special Restrictions: flatten
 <pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">my-flatten</span> <span style="color: #d33682;">[</span>coll<span style="color: #d33682;">]</span>
   <span style="color: #d33682;">(</span>seq <span style="color: #859900;">(</span>reduce <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">fn</span> <span style="color: #d33682;">[</span>result item<span style="color: #d33682;">]</span>
             <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #859900;">(</span>coll? item<span style="color: #859900;">)</span>
-                <span style="color: #859900;">(</span>into result <span style="color: #268bd2;">(</span>my-flatten-1 <span style="color: #d33682;">(</span>first <span style="color: #859900;">(</span>list item<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span>
+                <span style="color: #859900;">(</span>into result <span style="color: #268bd2;">(</span>my-flatten <span style="color: #d33682;">(</span>first <span style="color: #859900;">(</span>list item<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span>
                 <span style="color: #859900;">(</span>conj result item<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
           <span style="color: #268bd2;">[]</span>
           coll<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
@@ -733,27 +1005,25 @@ Special Restrictions: flatten
 <div class="org-src-container">
 <pre class="src src-clojure"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defn</span> <span style="color: #b58900;">my-flatten</span> <span style="color: #d33682;">[</span>item<span style="color: #d33682;">]</span>
   <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">cond</span>
-    <span style="color: #859900;">(</span>coll? item<span style="color: #859900;">)</span> <span style="color: #859900;">(</span>mapcat my-flatten-2 item<span style="color: #859900;">)</span>
+    <span style="color: #859900;">(</span>coll? item<span style="color: #859900;">)</span> <span style="color: #859900;">(</span>mapcat my-flatten item<span style="color: #859900;">)</span>
     <span style="color: #6c71c4; font-weight: bold;">:else</span> <span style="color: #859900;">[</span>item<span style="color: #859900;">]</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org655d113" class="outline-2">
-<h2 id="org655d113">Backlinks</h2>
-<div class="outline-text-2" id="text-org655d113">
+<div id="outline-container-org0a338be" class="outline-2">
+<h2 id="org0a338be">References</h2>
+<div class="outline-text-2" id="text-org0a338be">
 <ul class="org-ul">
-<li><a href="private/programming-exercises.html">Programming Exercises</a></li>
+<li><a href="private/learn-clojure.html">Learn Clojure</a></li>
+<li><a href="private/learn-clojure.html">Learn Clojure</a></li>
 <li><a href="private/4clojure-problems.html">4Clojure Problems</a></li>
+<li><a href="private/programming-exercises.html">Programming Exercises</a></li>
 <li><a href="index.html">Index</a></li>
 </ul>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="author">Author: Yosevu Kilonzo</p>
-<p class="date">Created: 2020-06-22 Mon 15:43</p>
 </div>
 </body>
 </html>
