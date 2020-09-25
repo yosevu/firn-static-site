@@ -1,0 +1,18 @@
+#+TITLE: Index
+
+About me
+
+About these notes
+
+GitHub Twitter LinkedIn email
+
+* Pages
+- [[file:learning-journal.org][Learning Journal]]
+- [[file:things-i-made.org][Things I made]]
+
+* Threads
+- [[file:note-taking.org][Note-taking]]
+* Notes
+- [[file:4clojure-exercises.org][4Clojure Exercises]]
+- [[file:how-to-build-a-single-page-blog-with-shadow-cljs.org][How to build a single-page blog with shadow-cljs]]
+- [[file:practicing-functional-javascript.org][Practicing Functional JavaScript]]

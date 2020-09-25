@@ -1,0 +1,50 @@
+#+title: Learning Journal
+#+created: 2020-09-22
+#+roam_alias:
+#+roam_tags: "public" "personal"
+
+* Org-publish: Force publish all files                                   :emacs:
+* Org-publish: Publishing notes and static assets from separate directories :emacs:
+Recursive public directories
+* Doom Emacs                                                             :emacs:
+The ~bin/doom~ utility
+https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#the-bindoom-utility
+http://ergoemacs.org/emacs/emacs_env_var_paths.html
+https://www.emacswiki.org/emacs/ExecPath
+* CIDER errors
+* clojure-lsp
+* Interactive versus Batch programming
+:PROPERTIES:
+:ID:       e870b8c0-c5ed-4a22-b77f-91599f0a2416
+:END:
+Compile time versus runtime
+- Go
+- Clojure
+- Java
+- JavaScript
+- Ruby
+- PHP
+- TypeScript
+* Prefix publish command to force publish
+* There are two kinds of tables in Org-mode
+~org-table-create~
+
+|   |   |   |   |
+|---+---+---+---|
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+~table-insert~
+
++-----+-----+-----+-----+
+|     |     |     |     |
++-----+-----+-----+-----+
+|     |     |     |     |
++-----+-----+-----+-----+
+|     |     |     |     |
++-----+-----+-----+-----+
+|     |     |     |     |
++-----+-----+-----+-----+
+* Reset initial commit
+~git update-ref -d HEAD~

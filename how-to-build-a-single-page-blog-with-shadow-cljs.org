@@ -1,0 +1,11 @@
+#+title: How to build a single-page blog with shadow-cljs
+#+created: 2020-09-22
+#+roam_alias:
+#+roam_tags: "public"
+#+options: toc:nil
+
+* Learn by doing
+:PROPERTIES:
+:ID:       60d3c4c3-bb9d-45ae-9f16-73aad981bdd8
+:END:
+Learning is a lot of things. [[file:private/problem-solving-is-learning.org][Problem Solving is Learning]]. [[file:private/programming-is-learning.org][Programming is learning]]. Doing is learning. Failing is learning. Life is learning.

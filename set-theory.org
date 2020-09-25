@@ -1,0 +1,10 @@
+#+title: Set theory
+#+created: 2020-06-01
+#+roam_alias: "set theory"
+#+roam_tags: "public" "personal"
+#+options: toc:nil
+
+* Definition
+#+begin_quote
+Set theory is a branch of [[file:mathematics.org][mathematical]] logic that studies sets, which informally are collections of objects. - [[https://en.wikipedia.org/wiki/Set_theory][Set theory, Wikipedia]]
+#+end_quote

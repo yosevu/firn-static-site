@@ -1,0 +1,439 @@
+#+title: 4Clojure Exercises
+#+created: 2020-05-28
+#+roam_alias:
+#+roam_tags: "public" "personal"
+
+Annotated solutions to 4Clojure's Clojure problems.
+
+* 1. Nothing but the Truth
+- Difficulty: Elementary
+- Topics: Equality
+
+This is a clojure form. Enter a value which will make the form evaluate to true.
+
+#+BEGIN_SRC clojure
+(defn nothing-but-truth []
+  (= true true))
+#+END_SRC
+
+#+begin_src clojure
+(= true true)
+#+end_src
+* 2. Simple Math
+:PROPERTIES:
+:ID:       904bb47f-4211-47a3-a065-7c611b66075a
+:END:
+Difficulty: Elementary
+Topics: Math
+
+If you are not familiar with [[http://en.wikipedia.org/wiki/Polish_notation][polish notation]], simple arithmetic might seem confusing.
+
+#+begin_src clojure
+(=
+ (- 10 (* 2 3))4)
+#+end_src
+* 3. Intro to strings
+- Difficulty: Elementary
+- Topics: Strings
+
+Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
+
+#+begin_src clojure
+(= "HELLO WORLD"
+   (.toUpperCase "hello world"))
+#+end_src
+* 4. Intro to lists
+- Difficulty: Elementary
+- Topics: Lists
+
+Lists can be constructed with either a function or a quoted form.
+
+#+begin_src clojure
+(= (list :a :b :c)
+   '(:a :b :c))
+#+end_src
+* 5. Lists: conj
+- Difficulty: Elementary
+- Topics: Lists
+
+When operating on a list, the conj function will return a new list with one or more items "added" to the front.
+
+#+begin_src clojure
+(= '(1 2 3 4)
+   (conj '(2 3 4)))
+
+(= '(1 2 3 4)
+   (conj '(3 4) 2 1))
+#+end_src
+* 6. Intro to vectors
+- Difficulty: Elementary
+- Topics: Vectors
+
+Vectors can be constructed several ways. You can compare them with lists.
+
+#+begin_src clojure
+(= [:a :b :c]
+   (list :a :b :c)
+   (vec '(:a :b :c))
+   (vector :a :b :c))
+#+end_src
+* 7. Vectors: conj
+- Difficulty: Elementary
+- Topics: Vectors
+
+When operating on a Vector, the conj function will return a new vector with one or more items "added" to the end.
+
+#+begin_src clojure
+(= [1 2 3 4]
+   (conj [1 2 3] 4))
+
+(= [1 2 3 4]
+   (conj [1 2] 3 4))
+#+end_src
+
+Notes
+
+~conj~ is a clipping, (an apocope) of conjoin.
+* 8. Intro to sets
+Difficulty: Elementary
+Topics: Sets
+
+Sets are collections of unique values.
+
+#+begin_src clojure
+(= #{:a :b :c :d}
+   (set '(:a :a :b :c :c :c :c :d :d)))
+(= #{:a :b :c :d}
+   (clojure.set/union #{:a :b :c} #{:b :c :d}))
+#+end_src
+
+Notes
+
+#+begin_quote
+In [[file:set-theory.org][set theory]], the union of a collection of sets is the set of all elements in the collection. - [[https://en.wikipedia.org/wiki/Union_(set_theory)][Union (set theory), Wikipedia]]
+#+end_quote
+
+In the second example above, there are two sets in the collection.
+
+1. ~#{:a :b :c}~
+1. ~#{:b :c :d}~
+
+The union of the sets A and B (A ∪ B) is the set ~#{:a :b :c :d}~.
+
+~=~ returns ~true~ when called as a unary function (with one argument): ~(= 1)~.
+* 9. Sets: conj
+- Difficulty: Elementary
+- Topic: Maps
+
+When operating on a set, the conj function returns a new set with one or more keys "added".
+
+#+begin_src clojure
+(= #{1 2 3 4}
+   (conj #{1 4 3} 2))
+#+end_src
+* 10. Intro to maps
+- Difficulty: Elementary
+- Topics: Maps
+
+Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
+
+#+begin_src clojure
+(= 20
+   ((hash-map :a 10 :b 20 :c 30) :b))
+
+(= 20
+   (:b {:a 10 :b 20 :c 30}))
+#+end_src
+* 11. Maps: conj
+- Difficulty: Elementary
+- Topics: Maps
+
+When operating on a map, the conj function returns a new map with one or more key-value pairs "added".
+
+#+BEGIN_SRC clojure
+(= {:a 1, :b 2, :c 3}
+   (conj {:a 1} {:b 2} [:c 3]))
+#+END_SRC
+* 12. Intro to Sequences
+- Difficulty: Elementary
+- Topics: seqs
+
+All Clojure collections support sequencing. You can operate on sequences with functions like first, second, and last.
+
+#+BEGIN_SRC clojue
+(= 3 (first '(3 2 1)))
+(= 3 (second [2 3 4]))
+(= 3 (last (list 1 2 3)))
+#+END_SRC
+* 13. Sequences: rest
+- Difficulty: Elementary
+- Topics: seqs
+
+#+BEGIN_SRC clojure
+(= [20 30 40]
+   (rest [10 20 30 40]))
+#+END_SRC
+
+Notes
+
+~rest~ returns a sequence. ~[20 30 40]~ and ~'(20 30 40)~ are equal because they are the same sequence.
+* 14. Intro to Functions
+- Difficulty: Elementary
+- Topics: Functions
+
+Clojure has many different ways to create functions.
+
+#+BEGIN_SRC clojure
+
+(= 8
+   ((fn add-five [x] (+ x 5)) 3))
+
+(= 8
+   ((fn [x] (+ x 5)) 3))
+
+(= 8
+   (#(+ % 5) 3))
+
+(= 8
+   ((partial + 5) 3))
+#+END_SRC
+
+Notes
+
+There is also ~defn~
+
+#+BEGIN_SRC clojure
+(= 8
+   ((defn add-five [x]
+      (+ x 5)) 3))
+#+END_SRC
+* 15. Double Down
+- Difficulty: Elementary
+- Topics: Functions
+
+Write a function which doubles a number.
+
+#+BEGIN_SRC clojure
+(defn double-down [n]
+  (+ n n)) ; (* n 2)
+
+(= (double-down 2) 4)
+(= (double-down 3) 6)
+(= (double-down 11) 22)
+(= (double-down 7) 14)
+#+END_SRC
+* 16. Hello World
+Difficulty: Elementary
+Topics: Functions
+
+Solution 1
+
+#+BEGIN_SRC clojure
+(defn hello-world [name]
+  (str "Hello, " name "!"))
+
+(= (hello-world "Dave") "Hello, Dave!")
+(= (hello-world "Jenn"), "Hello, Jenn!")
+(= (hello-world "Rhea"), "Hello, Rhea!")
+#+END_SRC
+
+Solution 2
+
+#+BEGIN_SRC clojure
+(fn [name] (str "Hello, " name "!"))
+#+END_SRC
+
+Solution 3
+#+BEGIN_SRC clojure
+#(str "Hello, " % "!")
+#+END_SRC
+* 17. Sequences: map
+- Difficulty: Elementary
+- Topics: Sequences Core Functions
+
+The map function takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.
+
+#+BEGIN_SRC clojure
+(= '(6 7 8)
+   (map #(+ % 5) '(1 2 3)))
+#+END_SRC
+
+* 18. Sequences: filter
+- Difficulty: Elementary
+- Topics: Sequences
+
+The filter function takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.
+
+#+BEGIN_SRC clojure
+(= '(6 7)
+   (filter #(> % 5) '(3 4 5 6 7)))
+#+END_SRC
+* 19. Last element
+- Difficulty: Easy
+- Topics: Sequences, Core Functions
+- Effort: 🧠
+
+Write a function which returns the last element in a sequence.
+
+Special Restrictions: last
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn last-element [s]
+  (nth s (- (count s) 1)))
+#+end_src
+
+*Other solutions*
+
+#+begin_src clojure
+(defn last-element [s]
+  (nth s (dec (count s))))
+#+end_src
+* 20. Penultimate element
+- Difficulty: Easy
+- Topics: seqs
+- Effort: 🧠
+
+Write a function which returns the second to last element from a sequence.
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn penultimate-element [s]
+  (nth s (- (count s) 2)))
+#+end_src
+
+*Other solutions*
+
+#+begin_src clojure
+(defn penultimate-element [s]
+  (comp second reverse))
+#+end_src
+* 21. Nth element
+- Difficulty: Easy
+- Topics: seqs core-functions
+- Effort: 🧠
+
+Write a function which returns the Nth element from a sequence.
+
+Special Restrictions: nth
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn nth-element [s index]
+  (get (vec s) index))
+#+end_src
+
+*Other solutions*
+
+#+begin_src clojure
+(defn nth-element [coll n]
+  (first (drop n coll)))
+#+end_src
+* 22. Count a sequence
+- Difficulty: Easy
+- Topics: seqs core-functions
+- Effort: 🧠
+
+Write a function which returns the total number of elements in a sequence.
+
+Special Restrictions: count
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn count-a-sequence [s]
+  (reduce (fn [total item]
+            (inc total)) 0 s))
+#+end_src
+
+*Other solutions*
+
+#+begin_src clojure
+(defn count-a-sequence [s]
+  (reduce + (map (constantly 1) s)))
+#+end_src
+* 23. Reverse a sequence
+- Difficulty: Easy
+- Topics: seqs core-functions
+- Effort: 🧠🧠🧠
+
+Write a function which reverses a sequence.
+
+Special Restrictions: reverse rseq
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn reverse-a-sequence [s])
+#+end_src
+* 24. Sum it all up
+- Difficulty: Easy
+- Topics: seqs
+- Effort: 🧠
+
+Write a function which returns the sum of a sequence of numbers.
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn sum-it-all-up [nums]
+  (reduce + nums))
+#+end_src
+* 25. Find the odd numbers
+- Difficulty: Easy
+- Topics: seqs
+- Effort: 🧠
+
+Write a function which returns only the odd numbers from a sequence.
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn find-the-odd-numbers [nums]
+  (filter odd? nums))
+#+end_src
+* 26. Fibonacci sequence
+- Difficulty: Easy
+- Topics: Fibonacci seqs
+- Effort:
+
+Write a function which returns the first X fibonacci numbers.
+
+*Iteration 1*
+
+#+begin_source clojure
+(defn find-the-odd-numbers)
+#+end_source
+* 27.
+* 28. Flatten a sequence
+- Difficulty: Easy
+- Topics: seqs core-functions
+- Effort: 🧠🧠🧠
+
+Write a function which flattens a sequence.
+
+Special Restrictions: flatten
+
+*Iteration 1*
+
+#+begin_src clojure
+(defn my-flatten [coll]
+  (seq (reduce (fn [result item]
+            (if (coll? item)
+                (into result (my-flatten (first (list item))))
+                (conj result item)))
+          []
+          coll)))
+#+end_src
+
+*Iteration 2*
+
+#+begin_src clojure
+(defn my-flatten [item]
+  (cond
+    (coll? item) (mapcat my-flatten item)
+    :else [item]))
+#+end_src

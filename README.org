@@ -1,0 +1,4 @@
+#+title: notes.yosevu.com
+#+created: 2020-09-24
+
+These are my notes, written in [[https://orgmode.org/][Org-mode]], published with [[https://github.com/theiceshelf/firn][Firn]].

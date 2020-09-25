@@ -1,0 +1,51 @@
+#+title: Note-taking
+#+created: 2020-05-29
+#+roam_alias: "note-taking"
+#+roam_tags:
+
+* Links
+** How to Make a Complete Map of Every Thought
+You Think
+Lion Kimbro
+2003
+*** https://users.speakeasy.net/~lion/nb/book.pdf
+*** https://users.speakeasy.net/~lion/nb/html/
+** [[https://roamresearch.com/#/app/help/page/1283][Roam for Zettlekasting]]
+** [[https://practicaltypography.com/bold-or-italic.html][Bold or italic | Butterick’s Practical Typography]]
+* Books
+- Review notes after each chapter and summarize before beginning the next.
+- Review chapter summaries halfway through the book and begin book summary.
+- Review review remaining chapter summaries and complete book summary.
+- Publish book summary.
+* How I Use Backlinks
+- I use general categories like "Books" "Thinking" "Problem Solving" as collection pages to collect references to the specific contexts that the concepts are relevant.
+- I also link these general concepts in list pages like Bookmarks, and Tools so that information that I can also find information that I haven't process in the contexts I will likely need it.
+* Emphasis
+The quick brown fox jumps over a lazy dog.
+
+THE QUICK BROWN FOX JUMPS OVER A LAZY DOG.
+
++The quick brown fox jumps over a lazy dog.+
+
+*The quick brown fox jumps over a lazy dog.*
+
+/The quick brown fox jumps over a lazy dog./
+
+_The quick brown fox jumps over a lazy dog._
+
+~The quick brown fox jumps over a lazy dog.~
+
+=The quick brown fox jumps over a lazy dog.=
+* Emphasis Rules for [[file:private/progressive-summarization.org][Progressive Summarization]]
+Base emphasis on resonance. Limit to two categories for simplicity: resonance and high resonance.
+
+** Books
+
+- Use yellow for resonance, unfamiliar, did not understand etc.
+- Use a secondary color for high resonance, key ideas.
+
+** Notes
+
+- _Use bold for resonance_
+- *Use underline for high resonance*
+
