@@ -1,7 +1,8 @@
-#+title: Note-taking
+#+title: Zettelkasten
 #+created: 2020-09-29
 #+roam_alias:
 #+roam_tags:
 
-* Note-taking
+* Zettelkasten
+
 This note has not been added.

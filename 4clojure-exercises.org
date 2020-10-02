@@ -1,11 +1,13 @@
 #+title: 4Clojure Exercises
 #+created: 2020-05-28
 #+roam_alias:
-#+roam_tags: "public" "personal"
+#+roam_tags:
+
+* 4Clojure Exercises
 
 Annotated solutions to 4Clojure's Clojure problems.
 
-* 1. Nothing but the Truth
+** 1. Nothing but the Truth
 - Difficulty: Elementary
 - Topics: Equality
 
@@ -19,7 +21,7 @@ This is a clojure form. Enter a value which will make the form evaluate to true.
 #+begin_src clojure
 (= true true)
 #+end_src
-* 2. Simple Math
+** 2. Simple Math
 :PROPERTIES:
 :ID:       904bb47f-4211-47a3-a065-7c611b66075a
 :END:
@@ -32,7 +34,7 @@ If you are not familiar with [[http://en.wikipedia.org/wiki/Polish_notation][pol
 (=
  (- 10 (* 2 3))4)
 #+end_src
-* 3. Intro to strings
+** 3. Intro to strings
 - Difficulty: Elementary
 - Topics: Strings
 
@@ -42,7 +44,7 @@ Clojure strings are Java strings. This means that you can use any of the Java st
 (= "HELLO WORLD"
    (.toUpperCase "hello world"))
 #+end_src
-* 4. Intro to lists
+** 4. Intro to lists
 - Difficulty: Elementary
 - Topics: Lists
 
@@ -52,7 +54,7 @@ Lists can be constructed with either a function or a quoted form.
 (= (list :a :b :c)
    '(:a :b :c))
 #+end_src
-* 5. Lists: conj
+** 5. Lists: conj
 - Difficulty: Elementary
 - Topics: Lists
 
@@ -65,7 +67,7 @@ When operating on a list, the conj function will return a new list with one or m
 (= '(1 2 3 4)
    (conj '(3 4) 2 1))
 #+end_src
-* 6. Intro to vectors
+** 6. Intro to vectors
 - Difficulty: Elementary
 - Topics: Vectors
 
@@ -77,7 +79,7 @@ Vectors can be constructed several ways. You can compare them with lists.
    (vec '(:a :b :c))
    (vector :a :b :c))
 #+end_src
-* 7. Vectors: conj
+** 7. Vectors: conj
 - Difficulty: Elementary
 - Topics: Vectors
 
@@ -94,7 +96,7 @@ When operating on a Vector, the conj function will return a new vector with one 
 Notes
 
 ~conj~ is a clipping, (an apocope) of conjoin.
-* 8. Intro to sets
+** 8. Intro to sets
 Difficulty: Elementary
 Topics: Sets
 
@@ -121,7 +123,7 @@ In the second example above, there are two sets in the collection.
 The union of the sets A and B (A ∪ B) is the set ~#{:a :b :c :d}~.
 
 ~=~ returns ~true~ when called as a unary function (with one argument): ~(= 1)~.
-* 9. Sets: conj
+** 9. Sets: conj
 - Difficulty: Elementary
 - Topic: Maps
 
@@ -131,7 +133,7 @@ When operating on a set, the conj function returns a new set with one or more ke
 (= #{1 2 3 4}
    (conj #{1 4 3} 2))
 #+end_src
-* 10. Intro to maps
+** 10. Intro to maps
 - Difficulty: Elementary
 - Topics: Maps
 
@@ -144,7 +146,7 @@ Maps store key-value pairs. Both maps and keywords can be used as lookup functio
 (= 20
    (:b {:a 10 :b 20 :c 30}))
 #+end_src
-* 11. Maps: conj
+** 11. Maps: conj
 - Difficulty: Elementary
 - Topics: Maps
 
@@ -154,7 +156,7 @@ When operating on a map, the conj function returns a new map with one or more ke
 (= {:a 1, :b 2, :c 3}
    (conj {:a 1} {:b 2} [:c 3]))
 #+END_SRC
-* 12. Intro to Sequences
+** 12. Intro to Sequences
 - Difficulty: Elementary
 - Topics: seqs
 
@@ -165,7 +167,7 @@ All Clojure collections support sequencing. You can operate on sequences with fu
 (= 3 (second [2 3 4]))
 (= 3 (last (list 1 2 3)))
 #+END_SRC
-* 13. Sequences: rest
+** 13. Sequences: rest
 - Difficulty: Elementary
 - Topics: seqs
 
@@ -177,7 +179,7 @@ All Clojure collections support sequencing. You can operate on sequences with fu
 Notes
 
 ~rest~ returns a sequence. ~[20 30 40]~ and ~'(20 30 40)~ are equal because they are the same sequence.
-* 14. Intro to Functions
+** 14. Intro to Functions
 - Difficulty: Elementary
 - Topics: Functions
 
@@ -207,7 +209,7 @@ There is also ~defn~
    ((defn add-five [x]
       (+ x 5)) 3))
 #+END_SRC
-* 15. Double Down
+** 15. Double Down
 - Difficulty: Elementary
 - Topics: Functions
 
@@ -222,7 +224,7 @@ Write a function which doubles a number.
 (= (double-down 11) 22)
 (= (double-down 7) 14)
 #+END_SRC
-* 16. Hello World
+** 16. Hello World
 Difficulty: Elementary
 Topics: Functions
 
@@ -247,7 +249,7 @@ Solution 3
 #+BEGIN_SRC clojure
 #(str "Hello, " % "!")
 #+END_SRC
-* 17. Sequences: map
+** 17. Sequences: map
 - Difficulty: Elementary
 - Topics: Sequences Core Functions
 
@@ -258,7 +260,7 @@ The map function takes two arguments: a function (f) and a sequence (s). Map ret
    (map #(+ % 5) '(1 2 3)))
 #+END_SRC
 
-* 18. Sequences: filter
+** 18. Sequences: filter
 - Difficulty: Elementary
 - Topics: Sequences
 
@@ -268,7 +270,7 @@ The filter function takes two arguments: a predicate function (f) and a sequence
 (= '(6 7)
    (filter #(> % 5) '(3 4 5 6 7)))
 #+END_SRC
-* 19. Last element
+** 19. Last element
 - Difficulty: Easy
 - Topics: Sequences, Core Functions
 - Effort: 🧠
@@ -290,7 +292,7 @@ Special Restrictions: last
 (defn last-element [s]
   (nth s (dec (count s))))
 #+end_src
-* 20. Penultimate element
+** 20. Penultimate element
 - Difficulty: Easy
 - Topics: seqs
 - Effort: 🧠
@@ -310,7 +312,7 @@ Write a function which returns the second to last element from a sequence.
 (defn penultimate-element [s]
   (comp second reverse))
 #+end_src
-* 21. Nth element
+** 21. Nth element
 - Difficulty: Easy
 - Topics: seqs core-functions
 - Effort: 🧠
@@ -332,7 +334,7 @@ Special Restrictions: nth
 (defn nth-element [coll n]
   (first (drop n coll)))
 #+end_src
-* 22. Count a sequence
+** 22. Count a sequence
 - Difficulty: Easy
 - Topics: seqs core-functions
 - Effort: 🧠
@@ -355,7 +357,7 @@ Special Restrictions: count
 (defn count-a-sequence [s]
   (reduce + (map (constantly 1) s)))
 #+end_src
-* 23. Reverse a sequence
+** 23. Reverse a sequence
 - Difficulty: Easy
 - Topics: seqs core-functions
 - Effort: 🧠🧠🧠
@@ -369,7 +371,7 @@ Special Restrictions: reverse rseq
 #+begin_src clojure
 (defn reverse-a-sequence [s])
 #+end_src
-* 24. Sum it all up
+** 24. Sum it all up
 - Difficulty: Easy
 - Topics: seqs
 - Effort: 🧠
@@ -382,7 +384,7 @@ Write a function which returns the sum of a sequence of numbers.
 (defn sum-it-all-up [nums]
   (reduce + nums))
 #+end_src
-* 25. Find the odd numbers
+** 25. Find the odd numbers
 - Difficulty: Easy
 - Topics: seqs
 - Effort: 🧠
@@ -395,7 +397,7 @@ Write a function which returns only the odd numbers from a sequence.
 (defn find-the-odd-numbers [nums]
   (filter odd? nums))
 #+end_src
-* 26. Fibonacci sequence
+** 26. Fibonacci sequence
 - Difficulty: Easy
 - Topics: Fibonacci seqs
 - Effort:
@@ -407,8 +409,8 @@ Write a function which returns the first X fibonacci numbers.
 #+begin_source clojure
 (defn find-the-odd-numbers)
 #+end_source
-* 27.
-* 28. Flatten a sequence
+** 27.
+** 28. Flatten a sequence
 - Difficulty: Easy
 - Topics: seqs core-functions
 - Effort: 🧠🧠🧠

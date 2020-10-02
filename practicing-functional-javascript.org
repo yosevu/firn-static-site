@@ -1,4 +1,7 @@
 #+title: Practicing Functional JavaScript
 #+created: 2020-09-24
 #+roam_alias:
-#+roam_tags: "public"
+#+roam_tags:
+
+* Practicing Functional JavaScript
+This note has not been added.

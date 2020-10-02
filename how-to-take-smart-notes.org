@@ -1,7 +1,7 @@
-#+title: Note-taking
+#+title: How to Take Smart Notes
 #+created: 2020-09-29
 #+roam_alias:
 #+roam_tags:
 
-* Note-taking
+* How to Take Smart Notes
 This note has not been added.

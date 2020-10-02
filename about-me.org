@@ -1,0 +1,16 @@
+#+title: About me
+#+created: 2020-09-26
+#+roam_alias:
+#+roam_tags:
+
+* About me
+:PROPERTIES:
+:ID:       27c9c9f1-780f-4afe-9a09-eb945d97d6af
+:END:
+Hello, I'm Yosevu Kilonzo. I'm a developer. I build things for the web at [[https://seesparkbox.com/][Sparkbox]].
+
+I have experience working on small and large full-stack projects with modern HTML, CSS, JavaScript, as well as other tools and technologies. I'm particularly interested in Functional Programming, Clojure, and [[file:integral-software.org][Integral Software]].
+
+I'm also interested in the relationship between writing and thinking as well as the ideas, systems, and tools for better thinking and insight.
+
+I value communication through connection, questions over answers, dialogue over narrative, thought before action, process over product, and [[file:solving-the-right-problem.org][solving the right problem]].

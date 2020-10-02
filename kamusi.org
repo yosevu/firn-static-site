@@ -1,7 +1,7 @@
-#+title: Projects
-#+created: 2020-09-24
+#+title: Kamusi
+#+created: 2020-09-25
 #+roam_alias:
 #+roam_tags:
 
-* Projects
+* Kamusi
 This note has not been added.

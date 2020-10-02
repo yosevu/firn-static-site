@@ -1,22 +1,42 @@
 #+title: Learning Journal
 #+created: 2020-09-22
 #+roam_alias:
-#+roam_tags: "public" "personal"
+#+roam_tags:
 
-* Org-publish: Force publish all files                                   :emacs:
-* Org-publish: Publishing notes and static assets from separate directories :emacs:
-Recursive public directories
-* Doom Emacs                                                             :emacs:
+* Learning Journal
+** Responsive widths and heights
+[2020-09-27 Sun]
+
+Use max-widths and width: 100% for responsive widths
+
+** [[file:this-is-a-very-long-link-to-another-note.org][This is a very long link to another note]]
+** [[https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme][prefers-color-scheme - CSS: Cascading Style Sheets | MDN]]
+[2020-09-25 Fri]
+** Reset initial commit
+[2020-09-24 Thu]
+
+~git update-ref -d HEAD~
+** Org-publish: Force publish all files                                 :emacs:
+[2020-09-24 Thu]
+
+Prefix publish command to force publish
+
+https://orgmode.org/guide/Publishing.html
+
+Org uses timestamps to track when a file has changed. The above functions normally only publish changed files. You can override this and force publishing of all files by giving a prefix argument to any of the commands above.
+** Doom Emacs                                                           :emacs:
+[2020-09-22 Tue]
+
 The ~bin/doom~ utility
 https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#the-bindoom-utility
 http://ergoemacs.org/emacs/emacs_env_var_paths.html
 https://www.emacswiki.org/emacs/ExecPath
-* CIDER errors
-* clojure-lsp
-* Interactive versus Batch programming
-:PROPERTIES:
-:ID:       e870b8c0-c5ed-4a22-b77f-91599f0a2416
-:END:
+** CIDER errors
+[2020-09-21 Mon]
+
+** Interactive versus Batch programming
+[2020-09-23 Wed]
+
 Compile time versus runtime
 - Go
 - Clojure
@@ -25,8 +45,9 @@ Compile time versus runtime
 - Ruby
 - PHP
 - TypeScript
-* Prefix publish command to force publish
-* There are two kinds of tables in Org-mode
+** There are two kinds of tables in Org-mode
+[2020-09-24 Thu]
+
 ~org-table-create~
 
 |   |   |   |   |
@@ -46,5 +67,3 @@ Compile time versus runtime
 +-----+-----+-----+-----+
 |     |     |     |     |
 +-----+-----+-----+-----+
-* Reset initial commit
-~git update-ref -d HEAD~
