@@ -1,12 +1,14 @@
 (defn head
-  [site-url body]
-  (let [resource #(str site-url "/static/" %)]
-    [:html
-     [:head
-      [:meta {:charset "UTF-8"}]
-      [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
-      [:link {:rel "stylesheet" :href (resource "css/firn_base.css")}]
-      [:link {:rel "stylesheet" :href (resource "css/a11y-dark.css")}]
-      [:script {:src (resource "js/highlight.pack.js")}]
-      [:script "hljs.initHighlightingOnLoad()"]]
-     body]))
+  ;; [{:keys [build-url site-title site-author site-desc]}]
+  [build-url]
+  [:html
+   [:head
+    [:meta {:charset "utf-8"}]
+    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
+    [:meta {:name "author" :content "Yosevu Kilonzo"}]
+    [:meta {:name "description" :content "Yosevu's notes. Written in Org-mode, published with Firn."}]
+    [:title "Yosevu's notes"]
+    [:link {:rel "stylesheet" :href (build-url "/static/css/firn_base.css")}]
+    [:link {:rel "stylesheet" :href (build-url "/static/css/a11y-dark.css")}]
+    [:script {:src (build-url "/static/js/highlight.pack.js")}]
+    [:script "hljs.initHighlightingOnLoad()"]]])
