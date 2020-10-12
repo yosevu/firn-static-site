@@ -1,7 +1,14 @@
-#+title: Use your brain for what it is good at
+#+title: Use your brain for what it's good at
 #+created: 2020-09-28
 #+roam_alias:
 #+roam_tags:
 
-* Use your brain for what it is good at
-This note has not been added.
+* Use your brain for what it's good at
+
+#+CAPTION: A young girl with a book
+#+ATTR_HTML: :alt A young girl with a book
+[[https://upload.wikimedia.org/wikipedia/commons/3/39/Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg][Moça com livro by  Almeida Júnior]]
+
+Humans are good at thinking, computers are good at computing.
+
+Thinking is not an analog to computing. [[https://en.wiktionary.org/wiki/computing#English][Computing]] is the process of [[https://en.wiktionary.org/wiki/calculate#English][calculation]] to determine the value solution to a problem. It uses a specific mathematical process. In contrast, to [[https://en.wiktionary.org/wiki/think#English][think]] is to wonder and to ponder deeply. It is a more general phenomenon than computing and requires a human-like consciousness. Thinking can be used for repetitive, mechanical tasks in computing, mathematics and other domains, but humans gravitate toward the kind of thinking that is characterized by non-linear connections, pattern recognition, and creative insight.

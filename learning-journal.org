@@ -4,26 +4,53 @@
 #+roam_tags:
 
 * Learning Journal
-** Responsive widths and heights
+** Modify separate keyboards independently on macOS                             :macos:
+[2020-10-04 Sun]
+
+For example, if you have mapped <kbd>caps lock</kbd> to the escape key on a Macbook Pro keyboard, when you plug in an external Apple keyboard, you have to modify its <kbd>caps lock</kbd> key independently.
+** Responsive widths and heights                                          :css:
 [2020-09-27 Sun]
 
-Use max-widths and width: 100% for responsive widths
+Create a responsive element with a maximum width.
 
-** [[file:this-is-a-very-long-link-to-another-note.org][This is a very long link to another note]]
-** [[https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme][prefers-color-scheme - CSS: Cascading Style Sheets | MDN]]
+#+BEGIN_SRC css
+.sidebar {
+  width: 100%;
+  max-width: 25rem;
+}
+#+END_SRC
+
+Note: A ~width~ must be defined for the ~max-width~ to take effect.
+
+** Use the prefers-color-scheme media query to detect light or dark mode  :css:
 [2020-09-25 Fri]
-** Reset initial commit
+
+#+BEGIN_SRC css
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: white;
+    --color-background: black;
+  }
+}
+#+END_SRC
+
+Reference: [[https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme][prefers-color-scheme]]
+
+** Reset an initial Git commit                                            :git:
 [2020-09-24 Thu]
 
 ~git update-ref -d HEAD~
-** Org-publish: Force publish all files                                 :emacs:
+
+** Force publish all files with Org-publish with prefix argument        :emacs:
 [2020-09-24 Thu]
 
-Prefix publish command to force publish
-
-https://orgmode.org/guide/Publishing.html
-
+#+begin_quote
 Org uses timestamps to track when a file has changed. The above functions normally only publish changed files. You can override this and force publishing of all files by giving a prefix argument to any of the commands above.
+#+end_quote
+
+Example: `C-c org-publish`
+
+Reference: [[https://orgmode.org/guide/Publishing.html][Publishing (Org Mode Compact Guide)]]
 ** Doom Emacs                                                           :emacs:
 [2020-09-22 Tue]
 
@@ -33,7 +60,7 @@ http://ergoemacs.org/emacs/emacs_env_var_paths.html
 https://www.emacswiki.org/emacs/ExecPath
 ** CIDER errors
 [2020-09-21 Mon]
-
+Filtering
 ** Interactive versus Batch programming
 [2020-09-23 Wed]
 
