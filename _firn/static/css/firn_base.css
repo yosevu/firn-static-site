@@ -296,7 +296,7 @@ img {
   max-width: 21rem;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 917px) {
   main {
     display: flex;
     justify-content: space-between;
@@ -337,7 +337,13 @@ img {
 }
 
 .firn-headline-section {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+.firn-headline-section-2 {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000;
 }
 
 .firn-headline-priority {
@@ -598,7 +604,7 @@ img {
   width: 100%;
   max-width: 25rem;
   background-color: var(--tag-bg);
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
   border-radius: var(--border-radius);
 }
