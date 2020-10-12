@@ -89,14 +89,6 @@ main {
   max-width: var(--width-content);
 }
 
-@media screen and (min-width: 840px) {
-  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-}
-
 .content {
   max-width: 41rem;
   margin: 1rem;
@@ -300,6 +292,25 @@ li > p {
   padding: 0;
 }
 
+img {
+  max-width: 21rem;
+}
+
+@media screen and (min-width: 840px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  img {
+    max-width: 31rem;
+  }
+}
+
+
 /* -- Firn "Components" ---- */
 
 /* Images */
@@ -313,6 +324,7 @@ li > p {
 }
 
 .firn-img-caption {
+  margin-top: 0.5rem;
   font-style: italic;
 }
 
