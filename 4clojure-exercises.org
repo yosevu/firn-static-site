@@ -439,3 +439,61 @@ Special Restrictions: flatten
     (coll? item) (mapcat my-flatten item)
     :else [item]))
 #+end_src
+** Let it be
+
+Can you bind x, y, and z so that these are all true?
+
+#+BEGIN_SRC clojure
+(deftest let-it-be
+  (is (= 10 (let [x 7 y 3 z 1] (+ x y))))
+  (is (=  4 (let [x 7 y 3 z 1] (+ y z))))
+  (is (=  1 (let [x 7 y 3 z 1] z))))
+#+END_SRC
+
+~let~ binds pairs of symbol-value pairs in a vector.
+** Regular expressions
+
+Regex patterns are supported with a special reader macro.
+
+#+BEGIN_SRC clojure
+(deftest reglar-expressions
+  (is (= "ABC" (apply str (re-seq #"[A-Z]+" "bA1B3Ce")))))
+#+END_SRC
+
+~re-seq~ returns a sequence of matches in a string.
+** Maximum value
+/[2020-10-10 Sat]/
+
+#+BEGIN_SRC clojure
+(defn maximum-value
+  "Takes a variable number of parameters and returns the maximum value."
+  [& vals]
+  (reduce #(if (> %1 %2) %1 %2) vals))
+#+END_SRC
+** Interleave two seqs
+
+~mapcat~ is great. 🎉
+
+/[2020-10-11 Sun]/
+
+#+BEGIN_SRC clojure
+(defn interleave-two-seqs
+  "Write a function which takes two sequences and returns the first item from each,
+   then the second item from each, then the third, etc."
+  [coll-a coll-b]
+  (mapcat #(conj [] %1 %2) coll-a coll-b))
+#+END_SRC
+** 40. Interpose a seq
+
+/[2020-10-12 Mon]/
+
+[[file:learning-journal.org][Today I learned]] that nested ~#()~ are not allowed.
+
+*Solution*:
+
+#+BEGIN_SRC clojure
+(defn interpose-a-seq
+  "Write a function which separates the items of a sequence by an arbitrary value."
+  [sep coll]
+  (drop-last (reduce #(conj %1 %2 sep) [] coll)))
+#+END_SRC

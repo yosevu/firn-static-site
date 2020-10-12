@@ -1,15 +1,37 @@
 #+title: Learning Journal
 #+created: 2020-09-22
-#+roam_alias:
+#+roam_alias: "Today I learned"
 #+roam_tags:
 
 * Learning Journal
-** Modify separate keyboards independently on macOS                             :macos:
-[2020-10-04 Sun]
+** Nested shorthand anonymous functions are not allowed               :clojure:
+
+/[2020-10-12 Mon]/
+
+Nested ~#()~ are not allowed. I discovered this while solving 4Clojure problem 40, [[file:4clojure-exercises.org::*40. Interpose a seq][Interpose a seq]].
+
+*Legal*:
+#+BEGIN_SRC clojure
+((fn
+  [sep coll]
+  (drop-last (reduce #(conj %1 %2 sep) [] coll))) "and" [1 2 3])
+
+;; =>  (1 "and" 2 "and" 3)
+#+END_SRC
+
+*Illegal*:
+#+BEGIN_SRC clojure
+(#(drop-last (reduce #(conj %3 %4 %1) [] %2)) "and" [1 2 3])
+
+;; Caused by clojure.lang.LispReader$ReaderException
+;;   java.lang.IllegalStateException: Nested #()s are not allowed
+#+END_SRC
+** Modify separate keyboards independently on macOS                     :macos:
+/[2020-10-04 Sun]/
 
 For example, if you have mapped <kbd>caps lock</kbd> to the escape key on a Macbook Pro keyboard, when you plug in an external Apple keyboard, you have to modify its <kbd>caps lock</kbd> key independently.
 ** Responsive widths and heights                                          :css:
-[2020-09-27 Sun]
+/[2020-09-27 Sun]/
 
 Create a responsive element with a maximum width.
 
@@ -23,7 +45,7 @@ Create a responsive element with a maximum width.
 Note: A ~width~ must be defined for the ~max-width~ to take effect.
 
 ** Use the prefers-color-scheme media query to detect light or dark mode  :css:
-[2020-09-25 Fri]
+/[2020-09-25 Fri]/
 
 #+BEGIN_SRC css
 @media (prefers-color-scheme: dark) {
@@ -37,60 +59,20 @@ Note: A ~width~ must be defined for the ~max-width~ to take effect.
 Reference: [[https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme][prefers-color-scheme]]
 
 ** Reset an initial Git commit                                            :git:
-[2020-09-24 Thu]
+/[2020-09-24 Thu]/
 
 ~git update-ref -d HEAD~
 
-** Force publish all files with Org-publish with prefix argument        :emacs:
-[2020-09-24 Thu]
+** Force Org-publish with prefix argument                               :emacs:
+
+/[2020-09-24 Thu]/
+
+Force publish all files with Org-publish with prefix argument.
+
+*Example*: ~C-c org-publish~
 
 #+begin_quote
 Org uses timestamps to track when a file has changed. The above functions normally only publish changed files. You can override this and force publishing of all files by giving a prefix argument to any of the commands above.
 #+end_quote
 
-Example: `C-c org-publish`
-
-Reference: [[https://orgmode.org/guide/Publishing.html][Publishing (Org Mode Compact Guide)]]
-** Doom Emacs                                                           :emacs:
-[2020-09-22 Tue]
-
-The ~bin/doom~ utility
-https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#the-bindoom-utility
-http://ergoemacs.org/emacs/emacs_env_var_paths.html
-https://www.emacswiki.org/emacs/ExecPath
-** CIDER errors
-[2020-09-21 Mon]
-Filtering
-** Interactive versus Batch programming
-[2020-09-23 Wed]
-
-Compile time versus runtime
-- Go
-- Clojure
-- Java
-- JavaScript
-- Ruby
-- PHP
-- TypeScript
-** There are two kinds of tables in Org-mode
-[2020-09-24 Thu]
-
-~org-table-create~
-
-|   |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-~table-insert~
-
-+-----+-----+-----+-----+
-|     |     |     |     |
-+-----+-----+-----+-----+
-|     |     |     |     |
-+-----+-----+-----+-----+
-|     |     |     |     |
-+-----+-----+-----+-----+
-|     |     |     |     |
-+-----+-----+-----+-----+
+*Reference*: [[https://orgmode.org/guide/Publishing.html][Publishing (Org Mode Compact Guide)]]
