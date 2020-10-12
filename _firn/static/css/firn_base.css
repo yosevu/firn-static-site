@@ -55,7 +55,7 @@
 /* CSS Variables (dark mode) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color: #0097fc;
+    --color-primary: #add8e6;
     --color-primary-accent: #555;
     --color-bg: #333;
     --color-bg-secondary: #555;
@@ -87,14 +87,6 @@ main {
 
 main {
   max-width: var(--width-content);
-}
-
-@media screen and (min-width: 840px) {
-  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
 }
 
 .content {
@@ -300,6 +292,25 @@ li > p {
   padding: 0;
 }
 
+img {
+  max-width: 21rem;
+}
+
+@media screen and (min-width: 840px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  img {
+    max-width: 31rem;
+  }
+}
+
+
 /* -- Firn "Components" ---- */
 
 /* Images */
@@ -313,6 +324,7 @@ li > p {
 }
 
 .firn-img-caption {
+  margin-top: 0.5rem;
   font-style: italic;
 }
 
