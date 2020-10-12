@@ -109,4 +109,23 @@ Topics: Functions</span></p><p><span>Solution 1</span></p><pre><code>(defn hello
   (cond
     (coll? item) (mapcat my-flatten item)
     :else [item]))
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="let-it-be"><span class="firn-headline-text"><span>Let it be</span></span></h2><section><p><span>Can you bind x, y, and z so that these are all true?</span></p><pre><code>(deftest let-it-be
+  (is (= 10 (let [x 7 y 3 z 1] (+ x y))))
+  (is (=  4 (let [x 7 y 3 z 1] (+ y z))))
+  (is (=  1 (let [x 7 y 3 z 1] z))))
+</code></pre><p><code>let</code><span> binds pairs of symbol-value pairs in a vector.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="regular-expressions"><span class="firn-headline-text"><span>Regular expressions</span></span></h2><section><p><span>Regex patterns are supported with a special reader macro.</span></p><pre><code>(deftest reglar-expressions
+  (is (= "ABC" (apply str (re-seq #"[A-Z]+" "bA1B3Ce")))))
+</code></pre><p><code>re-seq</code><span> returns a sequence of matches in a string.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="maximum-value"><span class="firn-headline-text"><span>Maximum value</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/10</span></em></p><pre><code>(defn maximum-value
+  "Takes a variable number of parameters and returns the maximum value."
+  [& vals]
+  (reduce #(if (> %1 %2) %1 %2) vals))
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="interleave-two-seqs"><span class="firn-headline-text"><span>Interleave two seqs</span></span></h2><section><p><code>mapcat</code><span> is great. 🎉</span></p><p><em><span class="firn-timestamp">2020/10/11</span></em></p><pre><code>(defn interleave-two-seqs
+  "Write a function which takes two sequences and returns the first item from each,
+   then the second item from each, then the third, etc."
+  [coll-a coll-b]
+  (mapcat #(conj [] %1 %2) coll-a coll-b))
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="40-interpose-a-seq"><span class="firn-headline-text"><span>40. Interpose a seq</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/12</span></em></p><p><a class="firn-internal" href="https://notes.yosevu.com/learning-journal">Today I learned</a><span> that nested </span><code>#()</code><span> are not allowed.</span></p><p><strong><span>Solution</span></strong><span>:</span></p><pre><code>(defn interpose-a-seq
+  "Write a function which separates the items of a sequence by an arbitrary value."
+  [sep coll]
+  (drop-last (reduce #(conj %1 %2 sep) [] coll)))
 </code></pre></section></div></div></div></div></article><aside class="backlinks"><h4 class="backlinks__heading">Links to this note</h4><ul class="firn-backlinks"><li class="firn-backlink"><a href="https://notes.yosevu.com/index">Index</a></li></ul></aside></main></body></html>
