@@ -11,9 +11,9 @@ Hello, I'm [[file:about-me.org][Yosevu Kilonzo]]. These are my notes, written wi
 
 I use the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] note-taking system, popularized by the German sociologist [[https://en.wikipedia.org/wiki/Niklas_Luhmann][Niklas Luhmann]] and the book [[file:how-to-take-smart-notes.org][How to Take Smart Notes]] by Sönke Ahrens. /Zettelkasten/ is usually translated as /slip box/, "slip" in the sense of a small piece of paper, a note.
 
-The core idea is to [[file:use-your-brain-for-what-it-is-good-at.org][use your brain for what it is good at]].
+The core idea is to [[file:use-your-brain-for-what-it-is-good-at.org][use your brain for what it is good at]]: networked thought.
 
-Human brains are good at recognizing patterns, making connections, and creative insight. Computers and systems are better suited for organizing, remembering, and managing information. [[file:writing-is-a-fundamental-tool-for-thought.org][Writing is a fundamental tool for thought]] and the slip box is a system that allows you to use you brain for the type of thinking it is good at.
+Zettelkasten is a system for networked thought analogous to a neural network. Writing in the slip box is the fundamental tool for thinking. It is different than the traditional writing process because it is non-linear, and allows for the emergence of creative insight.
 
 This is my slip box. This is where I write. This is where I think.
 
@@ -21,6 +21,9 @@ Let me know what you think!
 
 Connect with me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/yosevu][GitHub]], [[https://www.linkedin.com/in/yosevu][LinkedIn]], or email.
 
+* Pages
+- [[file:learning-journal.org][Learning Journal]]
+- [[file:projects.org][Projects]]
 * Notes
 :PROPERTIES:
 :ID:       36949a04-9c36-4664-8a6f-dd57ab275cdb
@@ -28,11 +31,5 @@ Connect with me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://git
 - [[file:4clojure-exercises.org][4Clojure Exercises]]
 - [[file:about-me.org][About me]]
 - [[file:how-i-built-this-site.org][How I built this site]]
-- [[file:how-to-build-a-single-page-blog-with-shadow-cljs.org][How to build a single-page blog with shadow-cljs]]
-- [[file:integral-software.org][Integral Software]]
-- [[file:kamusi.org][Kamusi]]
-- [[file:learning-journal.org][Learning Journal]]
-- [[file:practicing-functional-javascript.org][Practicing Functional JavaScript]]
 - [[file:use-your-brain-for-what-it-is-good-at.org][Use your brain for what it's good at]]
 - [[file:writing-is-a-fundamental-tool-for-thought.org][Writing is a fundamental for thought]]
-- [[file:zettelkasten.org][Zettelkasten]]
