@@ -6,7 +6,7 @@
 * Projects
 ** Practicing Functional JavaScript
 
-[[https://github.com/yosevu/practicing-functional-javascript][Practicing Functional JavaScript]] is a project for people to practice functional thinking. It is a collection of functional solutions to [[https://exercism.io/][Exercism]] exercises using the practical functional programming [[https://ramdajs.com/][Ramda]]. There is a corresponding video for each exercise. The focus is on patterns of [[https://github.com/hemanth/functional-programming-jargon#function-composition][function composition]] and [[https://github.com/hemanth/functional-programming-jargon#equational-reasoning][equational reasoning]].
+[[https://github.com/yosevu/practicing-functional-javascript][Practicing Functional JavaScript]] is a project for people to practice and develop the mental [[file:tools-for-thinking-functionally.org][tools for thinking functionally]]. It is a collection of functional solutions to [[https://exercism.io/][Exercism]] exercises using the practical functional programming [[https://ramdajs.com/][Ramda]]. There is a corresponding video for each exercise. The focus is on patterns of [[https://github.com/hemanth/functional-programming-jargon#function-composition][function composition]] and [[https://github.com/hemanth/functional-programming-jargon#equational-reasoning][equational reasoning]].
 
 *** References
 - [[https://seesparkbox.com/foundry/functional_programming_functional_javascript_exercises][Functional JavaScript Programming Exercises 1 & 2]]

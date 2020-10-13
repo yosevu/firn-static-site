@@ -9,8 +9,8 @@
 :END:
 Hello, I'm Yosevu Kilonzo. I'm a developer. I build things for the web at [[https://seesparkbox.com/][Sparkbox]].
 
-I have experience working on small and large full-stack projects with modern HTML, CSS, JavaScript, as well as other tools and technologies. I'm particularly interested in Functional Programming, Clojure, and [[file:integral-software.org][Integral Software]].
+I am experienced with small and large full-stack projects with modern HTML, CSS, JavaScript, as well as other tools and technologies. I'm especially interested in Functional Programming, Clojure, and building [[file:integral-software.org][Integral Software]].
 
-I'm also interested in the relationship between writing and thinking as well as the ideas, systems, and tools for better thinking and insight.
+I'm also interested in the relationship between writing and thinking as well as the ideas, systems, and tools for thought and insight.
 
-I value communication through connection, questions over answers, dialogue over narrative, thought before action, process over product, and [[file:solving-the-right-problem.org][solving the right problem]].
+I value communication through connection, dialogue over narrative, questions over answers, thought before action, process over product, and [[file:solving-the-right-problem.org][solving the right problem]].

@@ -7,7 +7,7 @@
 :PROPERTIES:
 :ID:       7253027d-0847-48a0-9227-e1001848b4f4
 :END:
-Hello, I'm [[file:about-me.org][Yosevu Kilonzo]]. These are my notes, written with [[https://www.orgroam.com/][Org-roam]] in [[https://www.gnu.org/software/emacs/][Emacs]], published with [[https://firn.theiceshelf.com/][Firn]], and inspired by [[https://notes.andymatuschak.org/About_these_notes][Andy's working notes]]. You can find the source code [[https://github.com/yosevu/notes.yosevu.com][here]].
+Hello, I'm [[file:about-me.org][Yosevu Kilonzo]]. These are my notes. They are inspired by [[https://notes.andymatuschak.org/About_these_notes][Andy's working notes]]. I write them with [[https://www.orgroam.com/][Org-roam]] in [[https://www.gnu.org/software/emacs/][Emacs]] and I publish them with [[https://firn.theiceshelf.com/][Firn]]. You can find the source code [[https://github.com/yosevu/notes.yosevu.com][here]].
 
 I use the [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] note-taking system, popularized by the German sociologist [[https://en.wikipedia.org/wiki/Niklas_Luhmann][Niklas Luhmann]] and the book [[file:how-to-take-smart-notes.org][How to Take Smart Notes]] by Sönke Ahrens. /Zettelkasten/ is usually translated as /slip box/, "slip" in the sense of a small piece of paper, a note.
 
@@ -19,17 +19,15 @@ This is my slip box. This is where I write. This is where I think.
 
 Let me know what you think!
 
-Connect with me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/yosevu][GitHub]], [[https://www.linkedin.com/in/yosevu][LinkedIn]], or email.
+Find me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/yosevu][GitHub]], and [[https://www.linkedin.com/in/yosevu][LinkedIn]] or by email at <a href="mailto:yosevu@yosevu.com">yosevu@yosevu.com</a>.
 
-* Pages
-- [[file:learning-journal.org][Learning Journal]]
-- [[file:projects.org][Projects]]
 * Notes
 :PROPERTIES:
 :ID:       36949a04-9c36-4664-8a6f-dd57ab275cdb
 :END:
 - [[file:4clojure-exercises.org][4Clojure Exercises]]
 - [[file:about-me.org][About me]]
-- [[file:how-i-built-this-site.org][How I built this site]]
+- [[file:projects.org][Projects]]
+- [[file:learning-journal.org][Learning Journal]]
+- [[file:tools-for-thinking-functionally.org][Tools for Thinking Functionally]]
 - [[file:use-your-brain-for-what-it-is-good-at.org][Use your brain for what it's good at]]
-- [[file:writing-is-a-fundamental-tool-for-thought.org][Writing is a fundamental for thought]]
