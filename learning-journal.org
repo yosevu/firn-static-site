@@ -4,6 +4,30 @@
 #+roam_tags:
 
 * Learning Journal
+** Toggle the literal or descriptive display of links in Org-mode       :emacs:
+[2020-10-15 Thu]
+
+You can toggle Org-mode links to display the description or the literal syntax wiht ~org-toggle-link-display~. This function is bound to ~M-SPC m d T~ in Doom Emacs
+
+** Unexpected EOF while reading item 17 of list                       :clojure:
+[2020-10-14 Wed]
+This is a syntax compilation error due to list without a closing ~)~.
+
+#+BEGIN_SRC clojure
+(ns firn.org
+  "Functions for managing org-related things.
+  Most of these functions are for operating on EDN-fied org-file
+  Which are created by the rust binary."
+  (:require [clojure.java.shell :as sh]
+            [clojure.string :as s]
+            [firn.util :as u]
+            [cheshire.core :as json]
+            ;; [firn.org :as org])
+
+;; Unhandled clojure.lang.ExceptionInfo
+;; Unexpected EOF while reading item 17 of list.
+;; {:type :reader-exception, :ex-kind :eof}
+#+END_SRC
 ** Nested shorthand anonymous functions are not allowed               :clojure:
 
 /[2020-10-12 Mon]/

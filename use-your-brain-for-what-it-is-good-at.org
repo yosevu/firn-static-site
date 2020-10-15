@@ -5,10 +5,10 @@
 
 * Use your brain for what it's good at
 
-#+CAPTION: A young girl with a book
-#+ATTR_HTML: :alt A young girl with a book
+#+CAPTION: "Moça com livro by Almeida Júnior"
+#+ATTR_HTML: :alt "A painting of a young girl with a book. Moça com livro by Almeida Júnior by Almeida Júnior"
 [[https://upload.wikimedia.org/wikipedia/commons/3/39/Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg][Moça com livro by  Almeida Júnior]]
 
-Humans are good at thinking, computers are good at computing.
+Humans are good at thinking; computers are good at computing.
 
-Thinking is not an analog for computing. [[https://en.wiktionary.org/wiki/computing#English][Computing]] is the process of [[https://en.wiktionary.org/wiki/calculate#English][calculation]] to determine the value solution to a problem. It uses a specific mathematical process. In contrast, [[https://en.wiktionary.org/wiki/think#English][to think]], is to wonder, to ponder, and to conceive. It is a more general phenomenon than computing and requires a human-like consciousness. We can use thinking for mechanical and repetitive tasks in computing, mathematics and other domains, but humans gravitate toward the kind of thinking that is characterized by making non-linear connections, pattern recognition, and creative insight.
+Computing is not an analog for thinking. [[https://en.wiktionary.org/wiki/computing#English][Computing]] is the process of [[https://en.wiktionary.org/wiki/calculate#English][calculation]] to determine the solution to a problem. It employs specific mathematical processes. [[https://en.wiktionary.org/wiki/think#English][To think]], in contrast, is to wonder, to ponder, and to conceive. It is a more general phenomenon than computing that requires a human-like consciousness. Humans can use thinking for mechanical and repetitive tasks in computing, mathematics and other domains, but we gravitate toward the kind of thinking that is characterized by making non-linear connections, pattern recognition, and creative insight.

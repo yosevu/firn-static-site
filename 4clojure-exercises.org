@@ -313,6 +313,28 @@ Write a function which returns the first X fibonacci numbers.
 (defn find-the-odd-numbers)
 #+end_source
 ** 27. Palindrome detector
+
+#+BEGIN_SRC clojure
+(defn palindrome-detector
+  "Write a function which returns true if the given sequence is a palindrome."
+  [x]
+  (= (seq x) (reverse (seq x))))
+#+END_SRC
+
+*Short version*
+#+BEGIN_SRC clojure
+#(= (seq %) (reverse (seq %)))
+#+END_SRC
+
+*Tests*
+#+BEGIN_SRC clojure
+(deftest palindrome-detector
+  (is (false? (palindrome-detector '(1 2 3 4 5))))
+  (is (true? (palindrome-detector "racecar")))
+  (is (true? (palindrome-detector [:foo :bar :foo])))
+  (is (true? (palindrome-detector '(1 1 3 3 1 1))))
+  (is (false? (palindrome-detector '(:a :b :c)))))
+#+END_SRC
 ** 28. Flatten a sequence
 Write a function which flattens a sequence.
 
@@ -368,7 +390,11 @@ Regex patterns are supported with a special reader macro.
   "Takes a variable number of parameters and returns the maximum value."
   [& vals]
   (reduce #(if (> %1 %2) %1 %2) vals))
+#+END_SRC
 
+*Tests*
+
+#+BEGIN_SRC clojure
 (deftest maximum-value
   (is (= (maximum-value 1 8 3 4) 8)))
 #+END_SRC
@@ -385,7 +411,11 @@ Regex patterns are supported with a special reader macro.
    then the second item from each, then the third, etc."
   [coll-a coll-b]
   (mapcat #(conj [] %1 %2) coll-a coll-b))
+#+END_SRC
 
+*Tests*
+
+#+BEGIN_SRC clojure
 (deftest interleave-two-seqs
   (is (= (interleave-two-seqs[1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)))
   (is (= (interleave-two-seqs [1 2] [3 4 5 6]) '(1 3 2 4)))
@@ -401,14 +431,16 @@ Regex patterns are supported with a special reader macro.
 
 [[file:learning-journal.org][Today I learned]] that nested ~#()~ are not allowed.
 
-*Solution*:
-
 #+BEGIN_SRC clojure
 (defn interpose-a-seq
   "Write a function which separates the items of a sequence by an arbitrary value."
   [sep coll]
   (drop-last (reduce #(conj %1 %2 sep) [] coll)))
+#+END_SRC
 
+*Tests*
+
+#+BEGIN_SRC clojure
 (deftest interpose-a-seq
   (is (= (interpose-a-seq 0 [1 2 3]) [1 0 2 0 3]))
   (is (= (apply str (interpose-a-seq ", " ["one" "two" "three"])) "one, two, three"))
@@ -424,12 +456,48 @@ Regex patterns are supported with a special reader macro.
   [n coll]
   (apply concat (partition-all (dec n) n coll)))
 
+
+#+END_SRC
+
+*Tests*
+#+BEGIN_SRC clojure
 (deftest drop-every-nth-item
   (is (= (drop-every-nth-item 3 [1 2 3 4 5 6 7 8]) [1 2 4 5 7 8]))
   (is (= (drop-every-nth-item 2 [:a :b :c :d :e :f]) [:a :c :e]))
   (is (= (drop-every-nth-item 4 [1 2 3 4 5 6]) [1 2 3 5 6])))
 #+END_SRC
 
-*** ~partition~ is an essential [[file:tools-for-thinking-functionally.org][tool for thinking functionally]]. It allows you to divide a list of items into a collection of smaller lists. The step option lets you skip items in the list that you do not want to include in the smaller lists.
+~partition~ is an essential [[file:tools-for-thinking-functionally.org][tool for thinking functionally]]. It allows you to divide a list of items into a collection of smaller lists. The step option lets you skip items in the list that you do not want to include in the smaller lists.
 
 *Note*: I flipped the parameters in order to pass the data as the last argument. This simplifies function composition as described in [[http://buzzdecafe.github.io/code/2014/05/16/introducing-ramda][Introducing Ramda]].
+
+** 42. Factorial fun
+
+#+BEGIN_SRC clojure
+(defn factorial-fun
+  "Write a function which calculates factorials."
+  [n]
+  (reduce * (range 1 (inc n))))
+#+END_SRC
+
+*Short solution*
+#+BEGIN_SRC clojure
+#(reduce * (range 1 (inc %)))
+#+END_SRC
+
+*Tests*
+#+BEGIN_SRC clojure
+(deftest factorial-fun
+  (is (= (factorial-fun 1) 1))
+  (is (= (factorial-fun 3) 6))
+  (is (= (factorial-fun 5) 120))
+  (is (= (factorial-fun 8) 40320)))
+#+END_SRC
+** 64. Intro to reduce
+
+#+BEGIN_SRC clojure
+(deftest intro-to-reduce
+  (is (= 15 (reduce + [1 2 3 4 5])))
+  (is (=  0 (reduce + [])))
+  (is (=  6 (reduce + 1 [2 3]))))
+#+END_SRC
