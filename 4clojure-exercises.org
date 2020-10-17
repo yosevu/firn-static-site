@@ -298,21 +298,60 @@ Write a function which returns the sum of a sequence of numbers.
 ** 25. Find the odd numbers
 Write a function which returns only the odd numbers from a sequence.
 
-*Iteration 1*
-
 #+begin_src clojure
 (defn find-the-odd-numbers [nums]
   (filter odd? nums))
 #+end_src
 ** 26. Fibonacci sequence
-Write a function which returns the first X fibonacci numbers.
+/[2020-10-17 Sat]/
 
-*Iteration 1*
+*Solution*
 
-#+begin_source clojure
-(defn find-the-odd-numbers)
-#+end_source
+#+BEGIN_SRC clojure
+(defn fib
+  "Generate a lazy fibonacci sequence"
+  ([]
+   (fib 1 1))
+  ([a b]
+   (lazy-seq (cons a (fib b (+ a b))))))
+
+(defn fibonacci-sequence
+  "Write a function which returns the first X fibonacci numbers."
+  [x]
+  (take x (fib)))
+#+END_SRC
+
+
+*4Clojure Solution*
+
+#+BEGIN_SRC clojure
+#(take % ((fn fib
+             ([]
+              (fib 1 1))
+             ([a b]
+              (lazy-seq (cons a (fib b (+ a b))))))))
+#+END_SRC
+
+*Tests*
+
+#+BEGIN_SRC clojure
+(deftest test-fibonacci-sequence
+  (is (= (fibonacci-sequence 3) '(1 1 2)))
+  (is (= (fibonacci-sequence 6) '(1 1 2 3 5 8)))
+  (is (= (fibonacci-sequence 8) '(1 1 2 3 5 8 13 21))))
+#+END_SRC
+
+*Notes*
+
+- The [[https://clojure.org/reference/special_forms#fn][anonymous function special]] form can take a symbol name, which is can be used to reference the function recursively.
+- Each arity is a list in multi-arity function definitions.
+
+*Questions*
+- How is a the base case resolved in a lazy sequence?
+  ~(cons 1 (cons 1 (cons 2 (cons 3 ...)))~
+
 ** 27. Palindrome detector
+/[2020-10-14 Wed]/
 
 #+BEGIN_SRC clojure
 (defn palindrome-detector
