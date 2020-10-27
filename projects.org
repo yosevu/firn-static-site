@@ -3,14 +3,58 @@
 #+roam_alias:
 #+roam_tags:
 
+#+begin_comment
+Lessons learned
+- Reagent state
+- Clojure macros and parsing markdown files
+- Client-side routing
+- Syntax highlighting
+Values
+- Simplicity, clarity
+- Minimalism
+
+Write about why I created this and existing options e.g. Cryogen
+#+end_comment
 * Projects
+** notes.yosevu.com
+
+Coming soon.
+
 ** Practicing Functional JavaScript
 
 [[https://github.com/yosevu/practicing-functional-javascript][Practicing Functional JavaScript]] is a project for people to practice and develop the mental [[file:tools-for-thinking-functionally.org][tools for thinking functionally]]. It is a collection of functional solutions to [[https://exercism.io/][Exercism]] exercises using the practical functional programming [[https://ramdajs.com/][Ramda]]. There is a corresponding video for each exercise. The focus is on patterns of [[https://github.com/hemanth/functional-programming-jargon#function-composition][function composition]] and [[https://github.com/hemanth/functional-programming-jargon#equational-reasoning][equational reasoning]].
 
-*** References
+**** Status: Active
+This project is active, look out for more exercises!
+
+**** Links
 - [[https://seesparkbox.com/foundry/functional_programming_functional_javascript_exercises][Functional JavaScript Programming Exercises 1 & 2]]
-  - Hello World
-  - Two Fer
 - [[https://seesparkbox.com/foundry/functional_programming_functional_javascript_resistor_color_practice][Functional JavaScript Programming Exercise 3: Resistor Color]]
 - [[https://seesparkbox.com/foundry/functional_programming_functional_javascript_resistor_color_duo_practice][Functional JavaScript Programming Exercise 4: Resistor Color Duo]]
+** shadow-static
+
+[[https://github.com/yosevu/shadow-static][shadow-static]] was the first thing I built with Clojure. It is a simple, single-page app that generates a minimal blog from markdown files. I built it with [[https://github.com/reagent-project/reagent][Reagent]], "a minimalistic ClojureScript interface to React.js". I used shadow-cljs for ClojureScript compilation and seamless npm integration. Finally, I used Tailwind CSS, a CSS utility framework to [[file:declarative-css.org][declaratively style]] the blog.
+
+My biggest takeaway was learning about [[https://clojure.org/reference/macros][Clojure macros]] and understanding how they work in order solve the problem of parsing markdown files to use to render HTML in ClojureScript.
+
+**** Features
+- Publish markdown posts as HTML
+- Syntax highlighting
+- Index page to list all posts
+- Individual post pages
+- Filter posts by tag
+
+**** Status: Complete
+The primary purpose of this project was to learn Clojure by building something practical. It is also an MVP blog that can be customized and improved upon as Luca Cambiaghi has done with [[https://luca.cambiaghi.me/][https://luca.cambiaghi.me]]. He also wrote [[https://luca.cambiaghi.me/new-website][a blog post about it]]. I do not use shadow-static for my personal blog because I write my notes in Org-mode. Read about in [[file:how-i-built-this-site.org][How I built this site]] if interested.
+
+** Sparkeats
+
+Coming soon.
+
+** kamusi
+
+Coming soon.
+
+#+begin_comment
+Smaller projects
+#+end_comment

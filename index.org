@@ -19,7 +19,7 @@ This is my slip box. This is where I write. This is where I think.
 
 Let me know what you think!
 
-Find me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/yosevu][GitHub]], and [[https://www.linkedin.com/in/yosevu][LinkedIn]] or by email at <a href="mailto:yosevu@yosevu.com">yosevu@yosevu.com</a>.
+Find me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/yosevu][GitHub]], and [[https://www.linkedin.com/in/yosevu][LinkedIn]] or email: <a href="mailto:yosevu@yosevu.com">yosevu@yosevu.com</a>.
 
 * Notes
 :PROPERTIES:
@@ -29,5 +29,7 @@ Find me on  me on [[https://twitter.com/yosevu][Twitter]], [[https://github.com/
 - [[file:about-me.org][About me]]
 - [[file:projects.org][Projects]]
 - [[file:learning-journal.org][Learning Journal]]
+- [[file:how-to-take-smart-notes.org][How to Take Smart Notes]]
+- [[file:note-taking.org][Note-taking]]
 - [[file:tools-for-thinking-functionally.org][Tools for Thinking Functionally]]
 - [[file:use-your-brain-for-what-it-is-good-at.org][Use your brain for what it's good at]]

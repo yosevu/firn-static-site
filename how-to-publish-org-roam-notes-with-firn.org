@@ -1,0 +1,4 @@
+#+title: How to Publish Org-roam Notes with Firn
+#+created: 2020-10-25
+#+roam_alias:
+#+roam_tags:

@@ -3,5 +3,38 @@
 #+roam_alias:
 #+roam_tags:
 
-* How to Take Smart Notes
-This note has not been added.
+* How to Take Smart Notes                                              :reading:
+** Key ideas
+- Writing is a fundamental tool for thinking.
+- Thinking is non-lineaer and therefore writing should be non-linear.
+- There are many different types of writing tasks.
+** Introduction
+/We write down both the things we want to remember and the things we fear to forget./ (Ahrens) [[Quotes]]
+
+My main takeaway from the introduction is *[[file:writing-is-a-fundamental-tool-for-thought.org][writing is a fundamental tool for thought]]*.
+
+Why smart notes? Make [[file:note-taking.org][note-taking]] more natural and productive. Writing is not a linear process. "It does not follow learning, research or study, it is the medium of each" (Ahrens). Bad note-taking is common because it has a poor feedback loop. The feedback loop is poor because there isn't a mechanism to connect notes to a purpose. There isn't a [[file:private/negative-feedback-loops.org][negative feedback loop]] that can be used to learn from to take better notes. With smart notes, the quality and flow of writing depends on what has already been written. The quality of that writing is a [[file:private/habits.org][habit]] and effective note-taking is a habit that [[file:private/compounding-knowledge.org][compounds knowledge]]. It does not begin months after [[id:4c9a169e-edfc-4434-b2fe-4fc9b9472bf5][the horse has already escaped from the barn]].
+
+"Every task that is interesting, meaningful and well-defined will be done." (Ahrens) [[Quotes]]
+
+There is no conflict between long- and short-term interests because a meaningful and well-defined removes the reliance on willpower. It is not /having willpower/, but /not having to use willpower/ that indicates that you set yourself up for success. (Ahrens). Who you are isn't as important as what you do, but what you do and, crucially, how you do it. This ties into the concept of [[file:grit.org][grit]].
+
+** 1. Everything You Need to Know
+"I never force myself to do anything I don't feel like. Whenever I am stuck, I do something else." - Niklas Luhmann [[file:private/quotes.org][Quotes]]
+
+What is the relationship between learning and reading and writing?
+
+The only way to avoid willpower is to design and create an environment and structures that support your goals.
+
+[[file:private/problem-decomposition.org][Problem decomposition]] and [[file:private/single-tasking.org][single-tasking]] complement one other. They are both necessary for getting things done effectively.
+
+"Having read more does not automatically mean having more ideas. Especially in the beginning, it means having fewer ideas to work with, because you know that others have already thought of most of them." (Ahrens) [[[[file:private/quotes.org][Quotes]]]]
+
+This idea corresponds to the idea that [[[[file:private/reception-precedes-perception.org][reception precedes perception]]]] and the [[file:private/order-of-acquisition.org][order of acquisition]].
+
+"An idea is only as valuable as its context, which is not necessarily the context it was taken from."
+
+The purpose of the index is to create entry points into key threads or lines of thought.
+** 2. Everything You Need to Do
+
+Coming soon.

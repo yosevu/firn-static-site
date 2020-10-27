@@ -1,7 +1,0 @@
-#+title: Kamusi
-#+created: 2020-09-25
-#+roam_alias:
-#+roam_tags:
-
-* Kamusi
-This note has not been added.

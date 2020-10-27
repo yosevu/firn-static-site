@@ -4,4 +4,12 @@
 #+roam_tags:
 
 * Note-taking
-This note has not been added.
+** Tags
+Tags are for categorization and are best used for a well-defined and manageable set of general topics.
+Examples
+- reading
+- learning
+- emacs
+- org-roam
+** Links
+Links also known as bidirectional or back links are for connecting notes in a slip box, not for categorization.

@@ -1,0 +1,22 @@
+#+title: Declarative CSS
+#+created: 2020-08-26
+#+roam_alias:
+#+roam_tags:
+
+* Declarative CSS
+This note has not been added.
+#+begin_comment
+CSS Paradigms, practices, and philosophies
+Declarative/imperative
+CSS is a stylesheet language
+Integral CSS
+The simplicity of Post CSS
+CSS values
+What is declarative CSS?
+What problem does writing declarative CSS solve?
+- Context switching between HTML and CSS
+Why not to write declarative CSS
+What declarative CSS tools are available?
+
+#+end_comment
+

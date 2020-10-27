@@ -4,14 +4,16 @@
 #+roam_tags:
 
 * Learning Journal
-** Toggle the literal or descriptive display of links in Org-mode       :emacs:
+** Sign multiple commits                                                  :git:
+~git rebase --exec 'git commit --amend --no-edit -n -S' -i <sha>~
+** Toggle the literal or descriptive display of links in Org-mode  :emacs:
 [2020-10-15 Thu]
 
 You can toggle Org-mode links to display the description or the literal syntax wiht ~org-toggle-link-display~. This function is bound to ~M-SPC m d T~ in Doom Emacs
 
 ** Unexpected EOF while reading item 17 of list                       :clojure:
 [2020-10-14 Wed]
-This is a syntax compilation error due to list without a closing ~)~.
+This is a syntax compilation error due to a [[https://clojuredocs.org/clojure.core/list][list]] without a closing ~)~.
 
 #+BEGIN_SRC clojure
 (ns firn.org
