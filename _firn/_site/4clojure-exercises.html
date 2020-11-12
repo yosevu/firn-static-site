@@ -97,9 +97,30 @@
 </code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="23-reverse-a-sequence"><span class="firn-headline-text"><span>23. Reverse a sequence</span></span></h2><section><p><span>Write a function which reverses a sequence.</span></p><p><span>Special Restrictions: reverse rseq</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn reverse-a-sequence [s])
 </code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="24-sum-it-all-up"><span class="firn-headline-text"><span>24. Sum it all up</span></span></h2><section><p><span>Write a function which returns the sum of a sequence of numbers.</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn sum-it-all-up [nums]
   (reduce + nums))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="25-find-the-odd-numbers"><span class="firn-headline-text"><span>25. Find the odd numbers</span></span></h2><section><p><span>Write a function which returns only the odd numbers from a sequence.</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn find-the-odd-numbers [nums]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="25-find-the-odd-numbers"><span class="firn-headline-text"><span>25. Find the odd numbers</span></span></h2><section><p><span>Write a function which returns only the odd numbers from a sequence.</span></p><pre><code>(defn find-the-odd-numbers [nums]
   (filter odd? nums))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="26-fibonacci-sequence"><span class="firn-headline-text"><span>26. Fibonacci sequence</span></span></h2><section><p><span>Write a function which returns the first X fibonacci numbers.</span></p><p><strong><span>Iteration 1</span></strong></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="27-palindrome-detector"><span class="firn-headline-text"><span>27. Palindrome detector</span></span></h2><section><pre><code>(defn palindrome-detector
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="26-fibonacci-sequence"><span class="firn-headline-text"><span>26. Fibonacci sequence</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/17</span></em></p><p><strong><span>Solution</span></strong></p><pre><code>(defn fib
+  "Generate a lazy fibonacci sequence"
+  ([]
+   (fib 1 1))
+  ([a b]
+   (lazy-seq (cons a (fib b (+ a b))))))
+
+(defn fibonacci-sequence
+  "Write a function which returns the first X fibonacci numbers."
+  [x]
+  (take x (fib)))
+</code></pre><p><strong><span>4Clojure Solution</span></strong></p><pre><code>#(take % ((fn fib
+             ([]
+              (fib 1 1))
+             ([a b]
+              (lazy-seq (cons a (fib b (+ a b))))))))
+</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest test-fibonacci-sequence
+  (is (= (fibonacci-sequence 3) '(1 1 2)))
+  (is (= (fibonacci-sequence 6) '(1 1 2 3 5 8)))
+  (is (= (fibonacci-sequence 8) '(1 1 2 3 5 8 13 21))))
+</code></pre><p><strong><span>Notes</span></strong></p><ul><li><p><span>The </span><a class="firn-external" href="https://clojure.org/reference/special_forms#fn" target="_blank">anonymous function special</a><span> form can take a symbol name, which is can be used to reference the function recursively.</span></p></li><li><p><span>Each arity is a list in multi-arity function definitions.</span></p></li></ul><p><strong><span>Questions</span></strong></p><ul><li><p><span>How is a the base case resolved in a lazy sequence?
+  </span><code>(cons 1 (cons 1 (cons 2 (cons 3 ...)))</code></p></li></ul></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="27-palindrome-detector"><span class="firn-headline-text"><span>27. Palindrome detector</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/14</span></em></p><pre><code>(defn palindrome-detector
   "Write a function which returns true if the given sequence is a palindrome."
   [x]
   (= (seq x) (reverse (seq x))))
