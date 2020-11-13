@@ -18,14 +18,23 @@ Write about why I created this and existing options e.g. Cryogen
 * Projects
 ** notes.yosevu.com
 
-Coming soon.
+[[https://notes.yosevu.com/projects][notes.yosevu.com]] is my personal website where I publish my personal notes and articles. I write them in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][Org-mode]] and I publish them with [[https://firn.theiceshelf.com/][Firn]]. Find [[https://github.com/yosevu/notes.yosevu.com][the source code]] on GitHub.
+
+**** Features
+- Use a system based on [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]] and [[https://roamresearch.com/][Roam Research]]
+- Publish org markup as HTML
+- Use a flexible, static site generator based in Clojure
+
+**** Status: Active
+
+This project is active.
 
 ** Practicing Functional JavaScript
 
 [[https://github.com/yosevu/practicing-functional-javascript][Practicing Functional JavaScript]] is a project for people to practice and develop the mental [[file:tools-for-thinking-functionally.org][tools for thinking functionally]]. It is a collection of functional solutions to [[https://exercism.io/][Exercism]] exercises using the practical functional programming [[https://ramdajs.com/][Ramda]]. There is a corresponding video for each exercise. The focus is on patterns of [[https://github.com/hemanth/functional-programming-jargon#function-composition][function composition]] and [[https://github.com/hemanth/functional-programming-jargon#equational-reasoning][equational reasoning]].
 
 **** Status: Active
-This project is active, look out for more exercises!
+This project is active. Look out for new exercises!
 
 **** Links
 - [[https://seesparkbox.com/foundry/functional_programming_functional_javascript_exercises][Functional JavaScript Programming Exercises 1 & 2]]
