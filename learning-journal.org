@@ -1,9 +1,24 @@
 #+title: Learning Journal
 #+created: 2020-09-22
-#+roam_alias: "Today I learned"
-#+roam_tags:
+#+roam_alias:#+filetags:
 
 * Learning Journal
+#+begin_comment
+
+** Org-mode table UI and autoformatting is really well thought out and nice
+** ~backward-kill-*
+- ~backward-kill-sentence~: C-x DEL
+** Doom Emacs cmd '': switch between buffers
+
+** ~position: sticky~
+https://medium.com/@elad/css-position-sticky-how-it-really-works-54cd01dc2d46
+https://www.digitalocean.com/community/tutorials/css-position-sticky
+Requirements
+- Sticky element
+- Sticky container with other content
+
+#+end_comment
+
 ** Sign multiple commits                                                  :git:
 ~git rebase --exec 'git commit --amend --no-edit -n -S' -i <sha>~
 ** Toggle the literal or descriptive display of links in Org-mode  :emacs:
@@ -102,3 +117,9 @@ Org uses timestamps to track when a file has changed. The above functions normal
 #+end_quote
 
 *Reference*: [[https://orgmode.org/guide/Publishing.html][Publishing (Org Mode Compact Guide)]]
+** consult text search within file
+~#find-term -- -g *.clj~
+** consult-ripgrep in directory                                         :notes:
+Regex search in directory
+1. prefix argument ~SPC u~ (~C-u~)
+2. ~consult-ripgrep~ (~consult-grep~)

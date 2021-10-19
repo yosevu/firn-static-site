@@ -1,7 +1,7 @@
 #+title: About me
 #+created: 2020-09-26
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * About me
 :PROPERTIES:

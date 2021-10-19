@@ -1,12 +1,9 @@
 #+title: Index
 #+created: 2020-09-25
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * About these notes
-:PROPERTIES:
-:ID:       7253027d-0847-48a0-9227-e1001848b4f4
-:END:
 Hello, I'm [[file:about-me.org][Yosevu Kilonzo]]. These are my notes. I write them in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][Org-mode]] and I publish them with [[https://firn.theiceshelf.com/][Firn]]. Find [[https://github.com/yosevu/notes.yosevu.com][the source code]] on GitHub. They are inspired by [[https://notes.andymatuschak.org/About_these_notes][Andy's working notes]].
 
 I use [[https://www.orgroam.com/][Org-roam]], a [[file:note-taking.org][note-taking]] system and [[file:tools-for-thinking-functionally.org][tool for thought]] based on [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]]. The system was popularized by German sociologist [[https://en.wikipedia.org/wiki/Niklas_Luhmann][Niklas Luhmann]] in the book [[file:how-to-take-smart-notes.org][How to Take Smart Notes]] by Sönke Ahrens. /Zettelkasten/ is usually translated as /slip box/, "slip" in the sense of a small piece of paper, a note.
@@ -23,9 +20,6 @@ This is my slip box. This is where I write. This is where I think. Find me on  m
 - [[file:learning-journal.org][Learning Journal]]
 
 * Notes
-:PROPERTIES:
-:ID:       36949a04-9c36-4664-8a6f-dd57ab275cdb
-:END:
 - [[file:4clojure-exercises.org][4Clojure Exercises]]
 - [[file:how-to-take-smart-notes.org][How to Take Smart Notes]]
 - [[file:note-taking.org][Note-taking]]

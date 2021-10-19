@@ -1,7 +1,7 @@
 #+title: Grit
 #+created: 2020-08-16
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * Grit
 

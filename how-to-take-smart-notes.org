@@ -1,7 +1,7 @@
 #+title: How to Take Smart Notes
 #+created: 2020-09-29
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * How to Take Smart Notes                                              :reading:
 ** Key ideas

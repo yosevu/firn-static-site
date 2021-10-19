@@ -1,7 +1,6 @@
 #+title: Tools for Thinking Functionally
 #+created: 2020-10-13
-#+roam_alias: "Tools for Functional Thought"
-#+roam_tags:
+#+roam_alias:#+filetags:
 
 * Tools for Thinking Functionally
 

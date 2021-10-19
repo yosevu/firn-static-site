@@ -1,4 +1,0 @@
-#+title: Reading Notes
-#+created: 2020-10-26
-#+roam_alias:
-#+roam_tags:

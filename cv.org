@@ -1,7 +1,7 @@
 #+title: CV
 #+created: 2020-09-24
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * CV
 This note has not been added.

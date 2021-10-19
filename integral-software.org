@@ -1,7 +1,7 @@
 #+title: Integral Software
 #+created: 2020-09-29
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 
 * Integral Software
 This note has not been added.

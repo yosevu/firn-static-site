@@ -1,7 +1,7 @@
 #+title: 4Clojure Exercises
 #+created: 2020-05-28
 #+roam_alias:
-#+roam_tags:
+#+filetags:
 #+firn_under: Content "The Render Function"
 #+firn_toc: {:depth 2 :list-type :ul}
 
@@ -532,6 +532,15 @@ Regex patterns are supported with a special reader macro.
   (is (= (factorial-fun 5) 120))
   (is (= (factorial-fun 8) 40320)))
 #+END_SRC
+** 43.
+
+
+Apply cf. unapply
+Packs vs. unpacks a value
+
+https://clojure.org/guides/learn/functions#_variadic_functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 ** 64. Intro to reduce
 
 #+BEGIN_SRC clojure
