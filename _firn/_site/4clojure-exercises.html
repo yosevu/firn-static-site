@@ -1,44 +1,44 @@
-<html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Yosevu Kilonzo" name="author" /><meta content="These are Yosevu&apos;s notes. They are written in Emacs Org-mode and published with Firn." name="description" /><title>Yosevu's notes</title><link href="https://notes.yosevu.com/static/css/firn_base.css" rel="stylesheet" /><link href="https://notes.yosevu.com/static/css/a11y-dark.css" rel="stylesheet" /><script src="https://notes.yosevu.com/static/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad()</script></head></html><body><main><article class="content"><div><div><section></section><div class="firn-headline-section firn-headline-section-1"><h1 class="firn-headline firn-headline-1" id="4clojure-exercises"><span class="firn-headline-text"><span>4Clojure Exercises</span></span></h1><section><p><span>Annotated solutions to 4Clojure's Clojure problems.</span></p></section><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="1-nothing-but-the-truth"><span class="firn-headline-text"><span>1. Nothing but the Truth</span></span></h2><section><p><span>This is a clojure form. Enter a value which will make the form evaluate to true.</span></p><pre><code>(defn nothing-but-truth []
+<html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Yosevu Kilonzo" name="author" /><meta content="These are Yosevu&apos;s notes. They are written in Emacs Org-mode and published with Firn." name="description" /><title>Yosevu's notes</title><link href="https://notes.yosevu.com/static/css/firn_base.css" rel="stylesheet" /><link href="https://notes.yosevu.com/static/css/a11y-dark.css" rel="stylesheet" /><script src="https://notes.yosevu.com/static/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad()</script></head></html><body><main><article class="content"><div><div><section></section><div class="firn-headline-section firn-headline-section-1"><h1 class="firn-headline firn-headline-1" id="4clojure-exercises"><span class="firn-headline-text"><span>4Clojure Exercises</span></span></h1><section><p><span>Annotated solutions to 4Clojure's Clojure problems.</span></p></section><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="1-nothing-but-the-truth"><span class="firn-headline-text"><span>1. Nothing but the Truth</span></span></h2><section><p><span>This is a clojure form. Enter a value which will make the form evaluate to true.</span></p><pre class="language-clojure"><code class="language-clojure">(defn nothing-but-truth []
   (= true true))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="2-simple-math"><span class="firn-headline-text"><span>2. Simple Math</span></span></h2><section><p><span>If you are not familiar with </span><a class="firn-external" href="http://en.wikipedia.org/wiki/Polish_notation" target="_blank">polish notation</a><span>, simple arithmetic might seem confusing.</span></p><pre><code>(=
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="2-simple-math"><span class="firn-headline-text"><span>2. Simple Math</span></span></h2><section><p><span>If you are not familiar with </span><a class="firn-external" href="http://en.wikipedia.org/wiki/Polish_notation" target="_blank">polish notation</a><span>, simple arithmetic might seem confusing.</span></p><pre class="language-clojure"><code class="language-clojure">(=
  (- 10 (* 2 3))4)
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="3-intro-to-strings"><span class="firn-headline-text"><span>3. Intro to strings</span></span></h2><section><p><span>Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.</span></p><pre><code>(= "HELLO WORLD"
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="3-intro-to-strings"><span class="firn-headline-text"><span>3. Intro to strings</span></span></h2><section><p><span>Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.</span></p><pre class="language-clojure"><code class="language-clojure">(= "HELLO WORLD"
    (.toUpperCase "hello world"))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="4-intro-to-lists"><span class="firn-headline-text"><span>4. Intro to lists</span></span></h2><section><p><span>Lists can be constructed with either a function or a quoted form.</span></p><pre><code>(= (list :a :b :c)
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="4-intro-to-lists"><span class="firn-headline-text"><span>4. Intro to lists</span></span></h2><section><p><span>Lists can be constructed with either a function or a quoted form.</span></p><pre class="language-clojure"><code class="language-clojure">(= (list :a :b :c)
    '(:a :b :c))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="5-lists:-conj"><span class="firn-headline-text"><span>5. Lists: conj</span></span></h2><section><p><span>When operating on a list, the conj function will return a new list with one or more items "added" to the front.</span></p><pre><code>(= '(1 2 3 4)
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="5-lists:-conj"><span class="firn-headline-text"><span>5. Lists: conj</span></span></h2><section><p><span>When operating on a list, the conj function will return a new list with one or more items "added" to the front.</span></p><pre class="language-clojure"><code class="language-clojure">(= '(1 2 3 4)
    (conj '(2 3 4)))
 
 (= '(1 2 3 4)
    (conj '(3 4) 2 1))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="6-intro-to-vectors"><span class="firn-headline-text"><span>6. Intro to vectors</span></span></h2><section><p><span>Vectors can be constructed several ways. You can compare them with lists.</span></p><pre><code>(= [:a :b :c]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="6-intro-to-vectors"><span class="firn-headline-text"><span>6. Intro to vectors</span></span></h2><section><p><span>Vectors can be constructed several ways. You can compare them with lists.</span></p><pre class="language-clojure"><code class="language-clojure">(= [:a :b :c]
    (list :a :b :c)
    (vec '(:a :b :c))
    (vector :a :b :c))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="7-vectors:-conj"><span class="firn-headline-text"><span>7. Vectors: conj</span></span></h2><section><p><span>When operating on a Vector, the conj function will return a new vector with one or more items "added" to the end.</span></p><pre><code>(= [1 2 3 4]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="7-vectors:-conj"><span class="firn-headline-text"><span>7. Vectors: conj</span></span></h2><section><p><span>When operating on a Vector, the conj function will return a new vector with one or more items "added" to the end.</span></p><pre class="language-clojure"><code class="language-clojure">(= [1 2 3 4]
    (conj [1 2 3] 4))
 
 (= [1 2 3 4]
    (conj [1 2] 3 4))
-</code></pre><p><code>conj</code><span> is a clipping, (an apocope) of conjoin.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="8-intro-to-sets"><span class="firn-headline-text"><span>8. Intro to sets</span></span></h2><section><p><span>Sets are collections of unique values.</span></p><pre><code>(= #{:a :b :c :d}
+</code></pre><p><code>conj</code><span> is a clipping, (an apocope) of conjoin.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="8-intro-to-sets"><span class="firn-headline-text"><span>8. Intro to sets</span></span></h2><section><p><span>Sets are collections of unique values.</span></p><pre class="language-clojure"><code class="language-clojure">(= #{:a :b :c :d}
    (set '(:a :a :b :c :c :c :c :d :d)))
 (= #{:a :b :c :d}
    (clojure.set/union #{:a :b :c} #{:b :c :d}))
-</code></pre><p><span>"In </span><a class="firn-internal" href="https://notes.yosevu.com/set-theory">set theory</a><span>, the union of a collection of sets is the set of all elements in the collection." - </span><a class="firn-external" href="https://en.wikipedia.org/wiki/Union_(set_theory)" target="_blank">Union (set theory), Wikipedia</a></p><p><span>In the second example above, there are two sets in the collection.</span></p><ol><li><p><code>#{:a :b :c}</code></p></li><li><p><code>#{:b :c :d}</code></p></li></ol><p><span>The union of the sets A and B (A ∪ B) is the set </span><code>#{:a :b :c :d}</code><span>.</span></p><p><code>=</code><span> returns </span><code>true</code><span> when called as a unary function (with one argument): </span><code>(= 1)</code><span>.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="9-sets:-conj"><span class="firn-headline-text"><span>9. Sets: conj</span></span></h2><section><p><span>When operating on a set, the conj function returns a new set with one or more keys "added".</span></p><pre><code>(= #{1 2 3 4}
+</code></pre><p><span>"In </span><a class="firn-internal" href="https://notes.yosevu.com/set-theory">set theory</a><span>, the union of a collection of sets is the set of all elements in the collection." - </span><a class="firn-external" href="https://en.wikipedia.org/wiki/Union_(set_theory)" target="_blank">Union (set theory), Wikipedia</a></p><p><span>In the second example above, there are two sets in the collection.</span></p><ol><li><p><code>#{:a :b :c}</code></p></li><li><p><code>#{:b :c :d}</code></p></li></ol><p><span>The union of the sets A and B (A ∪ B) is the set </span><code>#{:a :b :c :d}</code><span>.</span></p><p><code>=</code><span> returns </span><code>true</code><span> when called as a unary function (with one argument): </span><code>(= 1)</code><span>.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="9-sets:-conj"><span class="firn-headline-text"><span>9. Sets: conj</span></span></h2><section><p><span>When operating on a set, the conj function returns a new set with one or more keys "added".</span></p><pre class="language-clojure"><code class="language-clojure">(= #{1 2 3 4}
    (conj #{1 4 3} 2))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="10-intro-to-maps"><span class="firn-headline-text"><span>10. Intro to maps</span></span></h2><section><p><span>Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.</span></p><pre><code>(= 20
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="10-intro-to-maps"><span class="firn-headline-text"><span>10. Intro to maps</span></span></h2><section><p><span>Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.</span></p><pre class="language-clojure"><code class="language-clojure">(= 20
    ((hash-map :a 10 :b 20 :c 30) :b))
 
 (= 20
    (:b {:a 10 :b 20 :c 30}))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="11-maps:-conj"><span class="firn-headline-text"><span>11. Maps: conj</span></span></h2><section><p><span>When operating on a map, the conj function returns a new map with one or more key-value pairs "added".</span></p><pre><code>(= {:a 1, :b 2, :c 3}
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="11-maps:-conj"><span class="firn-headline-text"><span>11. Maps: conj</span></span></h2><section><p><span>When operating on a map, the conj function returns a new map with one or more key-value pairs "added".</span></p><pre class="language-clojure"><code class="language-clojure">(= {:a 1, :b 2, :c 3}
    (conj {:a 1} {:b 2} [:c 3]))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="12-intro-to-sequences"><span class="firn-headline-text"><span>12. Intro to Sequences</span></span></h2><section><p><span>All Clojure collections support sequencing. You can operate on sequences with functions like first, second, and last.</span></p><pre><code>(= 3 (first '(3 2 1)))
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="12-intro-to-sequences"><span class="firn-headline-text"><span>12. Intro to Sequences</span></span></h2><section><p><span>All Clojure collections support sequencing. You can operate on sequences with functions like first, second, and last.</span></p><pre class="language-clojue"><code class="language-clojue">(= 3 (first '(3 2 1)))
 (= 3 (second [2 3 4]))
 (= 3 (last (list 1 2 3)))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="13-sequences:-rest"><span class="firn-headline-text"><span>13. Sequences: rest</span></span></h2><section><pre><code>(= [20 30 40]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="13-sequences:-rest"><span class="firn-headline-text"><span>13. Sequences: rest</span></span></h2><section><pre class="language-clojure"><code class="language-clojure">(= [20 30 40]
    (rest [10 20 30 40]))
-</code></pre><p><code>rest</code><span> returns a sequence. </span><code>[20 30 40]</code><span> and </span><code>'(20 30 40)</code><span> are equal because they are the same sequence.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="14-intro-to-functions"><span class="firn-headline-text"><span>14. Intro to Functions</span></span></h2><section><p><a class="firn-internal" href="https://notes.yosevu.com/private/clojure">Clojure</a><span> has many different ways to create </span><a class="firn-internal" href="https://notes.yosevu.com/private/functions">functions</a><span>.</span></p><pre><code>(= 8
+</code></pre><p><code>rest</code><span> returns a sequence. </span><code>[20 30 40]</code><span> and </span><code>'(20 30 40)</code><span> are equal because they are the same sequence.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="14-intro-to-functions"><span class="firn-headline-text"><span>14. Intro to Functions</span></span></h2><section><p><a class="firn-internal" href="https://notes.yosevu.com/private/clojure">Clojure</a><span> has many different ways to create </span><a class="firn-internal" href="https://notes.yosevu.com/private/functions">functions</a><span>.</span></p><pre class="language-clojure"><code class="language-clojure">(= 8
    ((fn add-five [x] (+ x 5)) 3))
 
 (= 8
@@ -49,21 +49,21 @@
 
 (= 8
    ((partial + 5) 3))
-</code></pre><p><span>There is also </span><code>defn</code><span>:</span></p><pre><code>(defn add-five
+</code></pre><p><span>There is also </span><code>defn</code><span>:</span></p><pre class="language-clojure"><code class="language-clojure">(defn add-five
   "Add five to a number."
   [x]
   (+ x 5))
 
 (= 8
    (add-five 3))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="15-double-down"><span class="firn-headline-text"><span>15. Double Down</span></span></h2><section><p><span>Write a function which doubles a number.</span></p><pre><code>(defn double-down [n]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="15-double-down"><span class="firn-headline-text"><span>15. Double Down</span></span></h2><section><p><span>Write a function which doubles a number.</span></p><pre class="language-clojure"><code class="language-clojure">(defn double-down [n]
   (+ n n)) ; (* n 2)
 
 (= (double-down 2) 4)
 (= (double-down 3) 6)
 (= (double-down 11) 22)
 (= (double-down 7) 14)
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="16-hello-world"><span class="firn-headline-text"><span>16. Hello World</span></span></h2><section><p><strong><span>Function</span></strong></p><pre><code>(defn hello-world
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="16-hello-world"><span class="firn-headline-text"><span>16. Hello World</span></span></h2><section><p><strong><span>Function</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn hello-world
   "Hello, World!"
   [name]
   (str "Hello, " name "!"))
@@ -71,35 +71,35 @@
 (= (hello-world "Dave") "Hello, Dave!")
 (= (hello-world "Jenn"), "Hello, Jenn!")
 (= (hello-world "Rhea"), "Hello, Rhea!")
-</code></pre><p><strong><span>Anonymous function</span></strong></p><pre><code>(fn [name] (str "Hello, " name "!"))
-</code></pre><p><strong><span>Shorthand anonymous function</span></strong></p><pre><code>#(str "Hello, " % "!")
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="17-sequences:-map"><span class="firn-headline-text"><span>17. Sequences: map</span></span></h2><section><pre><code>(= '(6 7 8)
+</code></pre><p><strong><span>Anonymous function</span></strong></p><pre class="language-clojure"><code class="language-clojure">(fn [name] (str "Hello, " name "!"))
+</code></pre><p><strong><span>Shorthand anonymous function</span></strong></p><pre class="language-clojure"><code class="language-clojure">#(str "Hello, " % "!")
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="17-sequences:-map"><span class="firn-headline-text"><span>17. Sequences: map</span></span></h2><section><pre class="language-clojure"><code class="language-clojure">(= '(6 7 8)
    (map #(+ % 5) '(1 2 3)))
-</code></pre><p><code>map</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="18-sequences:-filter"><span class="firn-headline-text"><span>18. Sequences: filter</span></span></h2><section><pre><code>(= '(6 7)
+</code></pre><p><code>map</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="18-sequences:-filter"><span class="firn-headline-text"><span>18. Sequences: filter</span></span></h2><section><pre class="language-clojure"><code class="language-clojure">(= '(6 7)
    (filter #(> % 5) '(3 4 5 6 7)))
-</code></pre><p><code>filter</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="19-last-element"><span class="firn-headline-text"><span>19. Last element</span></span></h2><section><p><span>Write a function which returns the last element in a sequence.</span></p><p><span>Special Restrictions: last</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn last-element [s]
+</code></pre><p><code>filter</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="19-last-element"><span class="firn-headline-text"><span>19. Last element</span></span></h2><section><p><span>Write a function which returns the last element in a sequence.</span></p><p><span>Special Restrictions: last</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn last-element [s]
   (nth s (- (count s) 1)))
-</code></pre><p><strong><span>Other solutions</span></strong></p><pre><code>(defn last-element [s]
+</code></pre><p><strong><span>Other solutions</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn last-element [s]
   (nth s (dec (count s))))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="20-penultimate-element"><span class="firn-headline-text"><span>20. Penultimate element</span></span></h2><section><p><span>Write a function which returns the second to last element from a sequence.</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn penultimate-element [s]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="20-penultimate-element"><span class="firn-headline-text"><span>20. Penultimate element</span></span></h2><section><p><span>Write a function which returns the second to last element from a sequence.</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn penultimate-element [s]
   (nth s (- (count s) 2)))
-</code></pre><p><strong><span>Other solutions</span></strong></p><pre><code>(defn penultimate-element [s]
+</code></pre><p><strong><span>Other solutions</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn penultimate-element [s]
   (comp second reverse))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="21-nth-element"><span class="firn-headline-text"><span>21. Nth element</span></span></h2><section><p><span>Write a function which returns the Nth element from a sequence.</span></p><p><span>Special Restrictions: nth</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn nth-element [s index]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="21-nth-element"><span class="firn-headline-text"><span>21. Nth element</span></span></h2><section><p><span>Write a function which returns the Nth element from a sequence.</span></p><p><span>Special Restrictions: nth</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn nth-element [s index]
   (get (vec s) index))
-</code></pre><p><strong><span>Other solutions</span></strong></p><pre><code>(defn nth-element [coll n]
+</code></pre><p><strong><span>Other solutions</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn nth-element [coll n]
   (first (drop n coll)))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="22-count-a-sequence"><span class="firn-headline-text"><span>22. Count a sequence</span></span></h2><section><p><span>Write a function which returns the total number of elements in a sequence.</span></p><p><span>Special Restrictions: count</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn count-a-sequence [s]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="22-count-a-sequence"><span class="firn-headline-text"><span>22. Count a sequence</span></span></h2><section><p><span>Write a function which returns the total number of elements in a sequence.</span></p><p><span>Special Restrictions: count</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn count-a-sequence [s]
   (reduce (fn [total item]
             (inc total)) 0 s))
-</code></pre><p><strong><span>Other solutions</span></strong></p><pre><code>(defn count-a-sequence [s]
+</code></pre><p><strong><span>Other solutions</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn count-a-sequence [s]
   (reduce + (map (constantly 1) s)))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="23-reverse-a-sequence"><span class="firn-headline-text"><span>23. Reverse a sequence</span></span></h2><section><p><span>Write a function which reverses a sequence.</span></p><p><span>Special Restrictions: reverse rseq</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn reverse-a-sequence [s])
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="24-sum-it-all-up"><span class="firn-headline-text"><span>24. Sum it all up</span></span></h2><section><p><span>Write a function which returns the sum of a sequence of numbers.</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn sum-it-all-up [nums]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="23-reverse-a-sequence"><span class="firn-headline-text"><span>23. Reverse a sequence</span></span></h2><section><p><span>Write a function which reverses a sequence.</span></p><p><span>Special Restrictions: reverse rseq</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn reverse-a-sequence [s])
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="24-sum-it-all-up"><span class="firn-headline-text"><span>24. Sum it all up</span></span></h2><section><p><span>Write a function which returns the sum of a sequence of numbers.</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn sum-it-all-up [nums]
   (reduce + nums))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="25-find-the-odd-numbers"><span class="firn-headline-text"><span>25. Find the odd numbers</span></span></h2><section><p><span>Write a function which returns only the odd numbers from a sequence.</span></p><pre><code>(defn find-the-odd-numbers [nums]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="25-find-the-odd-numbers"><span class="firn-headline-text"><span>25. Find the odd numbers</span></span></h2><section><p><span>Write a function which returns only the odd numbers from a sequence.</span></p><pre class="language-clojure"><code class="language-clojure">(defn find-the-odd-numbers [nums]
   (filter odd? nums))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="26-fibonacci-sequence"><span class="firn-headline-text"><span>26. Fibonacci sequence</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/17</span></em></p><p><strong><span>Solution</span></strong></p><pre><code>(defn fib
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="26-fibonacci-sequence"><span class="firn-headline-text"><span>26. Fibonacci sequence</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/17</span></em></p><p><strong><span>Solution</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn fib
   "Generate a lazy fibonacci sequence"
   ([]
    (fib 1 1))
@@ -110,89 +110,92 @@
   "Write a function which returns the first X fibonacci numbers."
   [x]
   (take x (fib)))
-</code></pre><p><strong><span>4Clojure Solution</span></strong></p><pre><code>#(take % ((fn fib
+</code></pre><p><strong><span>4Clojure Solution</span></strong></p><pre class="language-clojure"><code class="language-clojure">#(take % ((fn fib
              ([]
               (fib 1 1))
              ([a b]
               (lazy-seq (cons a (fib b (+ a b))))))))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest test-fibonacci-sequence
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest test-fibonacci-sequence
   (is (= (fibonacci-sequence 3) '(1 1 2)))
   (is (= (fibonacci-sequence 6) '(1 1 2 3 5 8)))
   (is (= (fibonacci-sequence 8) '(1 1 2 3 5 8 13 21))))
 </code></pre><p><strong><span>Notes</span></strong></p><ul><li><p><span>The </span><a class="firn-external" href="https://clojure.org/reference/special_forms#fn" target="_blank">anonymous function special</a><span> form can take a symbol name, which is can be used to reference the function recursively.</span></p></li><li><p><span>Each arity is a list in multi-arity function definitions.</span></p></li></ul><p><strong><span>Questions</span></strong></p><ul><li><p><span>How is a the base case resolved in a lazy sequence?
-  </span><code>(cons 1 (cons 1 (cons 2 (cons 3 ...)))</code></p></li></ul></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="27-palindrome-detector"><span class="firn-headline-text"><span>27. Palindrome detector</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/14</span></em></p><pre><code>(defn palindrome-detector
+  </span><code>(cons 1 (cons 1 (cons 2 (cons 3 ...)))</code></p></li></ul></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="27-palindrome-detector"><span class="firn-headline-text"><span>27. Palindrome detector</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/14</span></em></p><pre class="language-clojure"><code class="language-clojure">(defn palindrome-detector
   "Write a function which returns true if the given sequence is a palindrome."
   [x]
   (= (seq x) (reverse (seq x))))
-</code></pre><p><strong><span>Short version</span></strong></p><pre><code>#(= (seq %) (reverse (seq %)))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest palindrome-detector
+</code></pre><p><strong><span>Short version</span></strong></p><pre class="language-clojure"><code class="language-clojure">#(= (seq %) (reverse (seq %)))
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest palindrome-detector
   (is (false? (palindrome-detector '(1 2 3 4 5))))
   (is (true? (palindrome-detector "racecar")))
   (is (true? (palindrome-detector [:foo :bar :foo])))
   (is (true? (palindrome-detector '(1 1 3 3 1 1))))
   (is (false? (palindrome-detector '(:a :b :c)))))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="28-flatten-a-sequence"><span class="firn-headline-text"><span>28. Flatten a sequence</span></span></h2><section><p><span>Write a function which flattens a sequence.</span></p><p><span>Special Restrictions: flatten</span></p><p><strong><span>Iteration 1</span></strong></p><pre><code>(defn my-flatten [coll]
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="28-flatten-a-sequence"><span class="firn-headline-text"><span>28. Flatten a sequence</span></span></h2><section><p><span>Write a function which flattens a sequence.</span></p><p><span>Special Restrictions: flatten</span></p><p><strong><span>Iteration 1</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn my-flatten [coll]
   (seq (reduce (fn [result item]
             (if (coll? item)
                 (into result (my-flatten (first (list item))))
                 (conj result item)))
           []
           coll)))
-</code></pre><p><strong><span>Iteration 2</span></strong></p><pre><code>(defn my-flatten [item]
+</code></pre><p><strong><span>Iteration 2</span></strong></p><pre class="language-clojure"><code class="language-clojure">(defn my-flatten [item]
   (cond
     (coll? item) (mapcat my-flatten item)
     :else [item]))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="36-let-it-be"><span class="firn-headline-text"><span>36. Let it be</span></span></h2><section><p><span>Can you bind x, y, and z so that these are all true?</span></p><pre><code>(deftest let-it-be
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="36-let-it-be"><span class="firn-headline-text"><span>36. Let it be</span></span></h2><section><p><span>Can you bind x, y, and z so that these are all true?</span></p><pre class="language-clojure"><code class="language-clojure">(deftest let-it-be
   (is (= 10 (let [x 7 y 3 z 1] (+ x y))))
   (is (=  4 (let [x 7 y 3 z 1] (+ y z))))
   (is (=  1 (let [x 7 y 3 z 1] z))))
-</code></pre><p><code>let</code><span> binds pairs of symbol-value pairs in a vector.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="37-regular-expressions"><span class="firn-headline-text"><span>37. Regular expressions</span></span></h2><section><p><span>Regex patterns are supported with a special reader macro.</span></p><pre><code>(deftest reglar-expressions
+</code></pre><p><code>let</code><span> binds pairs of symbol-value pairs in a vector.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="37-regular-expressions"><span class="firn-headline-text"><span>37. Regular expressions</span></span></h2><section><p><span>Regex patterns are supported with a special reader macro.</span></p><pre class="language-clojure"><code class="language-clojure">(deftest reglar-expressions
   (is (= "ABC" (apply str (re-seq #"[A-Z]+" "bA1B3Ce")))))
-</code></pre><p><code>re-seq</code><span> returns a sequence of matches in a string.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="38-maximum-value"><span class="firn-headline-text"><span>38. Maximum value</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/10</span></em></p><pre><code>(defn maximum-value
+</code></pre><p><code>re-seq</code><span> returns a sequence of matches in a string.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="38-maximum-value"><span class="firn-headline-text"><span>38. Maximum value</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/10</span></em></p><pre class="language-clojure"><code class="language-clojure">(defn maximum-value
   "Takes a variable number of parameters and returns the maximum value."
   [& vals]
   (reduce #(if (> %1 %2) %1 %2) vals))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest maximum-value
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest maximum-value
   (is (= (maximum-value 1 8 3 4) 8)))
-</code></pre><p><code>reduce</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It has two arities. The first takes a function and a collection and the second takes a function, an initial value, and a collection. The function passed to reduce has to parameters, the result and the current item in the collection. If there is an initial value argument, it is passed as the result parameter. If not, the first item of the collection is passed by default.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="39-interleave-two-seqs"><span class="firn-headline-text"><span>39. Interleave two seqs</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/11</span></em></p><pre><code>(defn interleave-two-seqs
+</code></pre><p><code>reduce</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It has two arities. The first takes a function and a collection and the second takes a function, an initial value, and a collection. The function passed to reduce has to parameters, the result and the current item in the collection. If there is an initial value argument, it is passed as the result parameter. If not, the first item of the collection is passed by default.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="39-interleave-two-seqs"><span class="firn-headline-text"><span>39. Interleave two seqs</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/11</span></em></p><pre class="language-clojure"><code class="language-clojure">(defn interleave-two-seqs
   "Write a function which takes two sequences and returns the first item from each,
    then the second item from each, then the third, etc."
   [coll-a coll-b]
   (mapcat #(conj [] %1 %2) coll-a coll-b))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest interleave-two-seqs
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest interleave-two-seqs
   (is (= (interleave-two-seqs[1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)))
   (is (= (interleave-two-seqs [1 2] [3 4 5 6]) '(1 3 2 4)))
   (is (= (interleave-two-seqs [1 2 3 4] [5]) [1 5]))
   (is (= (interleave-two-seqs [30 20] [25 15]) [30 25 20 15])))
-</code></pre><p><code>mapcat</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It concatenates the results applying a map function to a set of collections.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="40-interpose-a-seq"><span class="firn-headline-text"><span>40. Interpose a seq</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/12</span></em></p><p><a class="firn-internal" href="https://notes.yosevu.com/learning-journal">Today I learned</a><span> that nested </span><code>#()</code><span> are not allowed.</span></p><pre><code>(defn interpose-a-seq
+</code></pre><p><code>mapcat</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It concatenates the results applying a map function to a set of collections.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="40-interpose-a-seq"><span class="firn-headline-text"><span>40. Interpose a seq</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/12</span></em></p><p><a class="firn-internal" href="https://notes.yosevu.com/learning-journal">Today I learned</a><span> that nested </span><code>#()</code><span> are not allowed.</span></p><pre class="language-clojure"><code class="language-clojure">(defn interpose-a-seq
   "Write a function which separates the items of a sequence by an arbitrary value."
   [sep coll]
   (drop-last (reduce #(conj %1 %2 sep) [] coll)))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest interpose-a-seq
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest interpose-a-seq
   (is (= (interpose-a-seq 0 [1 2 3]) [1 0 2 0 3]))
   (is (= (apply str (interpose-a-seq ", " ["one" "two" "three"])) "one, two, three"))
   (is (= (interpose-a-seq :z [:a :b :c :d]) [:a :z :b :z :c :z :d])))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="41-drop-every-nth-item"><span class="firn-headline-text"><span>41. Drop every nth item</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/13</span></em></p><pre><code>(defn drop-every-nth-item
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="41-drop-every-nth-item"><span class="firn-headline-text"><span>41. Drop every nth item</span></span></h2><section><p><em><span class="firn-timestamp">2020/10/13</span></em></p><pre class="language-clojure"><code class="language-clojure">(defn drop-every-nth-item
   "Write a function which drops every Nth item from a sequence."
   [n coll]
   (apply concat (partition-all (dec n) n coll)))
 
 
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest drop-every-nth-item
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest drop-every-nth-item
   (is (= (drop-every-nth-item 3 [1 2 3 4 5 6 7 8]) [1 2 4 5 7 8]))
   (is (= (drop-every-nth-item 2 [:a :b :c :d :e :f]) [:a :c :e]))
   (is (= (drop-every-nth-item 4 [1 2 3 4 5 6]) [1 2 3 5 6])))
-</code></pre><p><code>partition</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It allows you to divide a list of items into a collection of smaller lists. The step option lets you skip items in the list that you do not want to include in the smaller lists.</span></p><p><strong><span>Note</span></strong><span>: I flipped the parameters in order to pass the data as the last argument. This simplifies function composition as described in </span><a class="firn-external" href="http://buzzdecafe.github.io/code/2014/05/16/introducing-ramda" target="_blank">Introducing Ramda</a><span>.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="42-factorial-fun"><span class="firn-headline-text"><span>42. Factorial fun</span></span></h2><section><pre><code>(defn factorial-fun
+</code></pre><p><code>partition</code><span> is an essential </span><a class="firn-internal" href="https://notes.yosevu.com/tools-for-thinking-functionally">tool for thinking functionally</a><span>. It allows you to divide a list of items into a collection of smaller lists. The step option lets you skip items in the list that you do not want to include in the smaller lists.</span></p><p><strong><span>Note</span></strong><span>: I flipped the parameters in order to pass the data as the last argument. This simplifies function composition as described in </span><a class="firn-external" href="http://buzzdecafe.github.io/code/2014/05/16/introducing-ramda" target="_blank">Introducing Ramda</a><span>.</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="42-factorial-fun"><span class="firn-headline-text"><span>42. Factorial fun</span></span></h2><section><pre class="language-clojure"><code class="language-clojure">(defn factorial-fun
   "Write a function which calculates factorials."
   [n]
   (reduce * (range 1 (inc n))))
-</code></pre><p><strong><span>Short solution</span></strong></p><pre><code>#(reduce * (range 1 (inc %)))
-</code></pre><p><strong><span>Tests</span></strong></p><pre><code>(deftest factorial-fun
+</code></pre><p><strong><span>Short solution</span></strong></p><pre class="language-clojure"><code class="language-clojure">#(reduce * (range 1 (inc %)))
+</code></pre><p><strong><span>Tests</span></strong></p><pre class="language-clojure"><code class="language-clojure">(deftest factorial-fun
   (is (= (factorial-fun 1) 1))
   (is (= (factorial-fun 3) 6))
   (is (= (factorial-fun 5) 120))
   (is (= (factorial-fun 8) 40320)))
-</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="64-intro-to-reduce"><span class="firn-headline-text"><span>64. Intro to reduce</span></span></h2><section><pre><code>(deftest intro-to-reduce
+</code></pre></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="43"><span class="firn-headline-text"><span>43.</span></span></h2><section><p><span>Apply cf. unapply
+Packs vs. unpacks a value</span></p><p><span>https://clojure.org/guides/learn/functions#_variadic_functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max</span></p></section></div><div class="firn-headline-section firn-headline-section-2"><h2 class="firn-headline firn-headline-2" id="64-intro-to-reduce"><span class="firn-headline-text"><span>64. Intro to reduce</span></span></h2><section><pre class="language-clojure"><code class="language-clojure">(deftest intro-to-reduce
   (is (= 15 (reduce + [1 2 3 4 5])))
   (is (=  0 (reduce + [])))
   (is (=  6 (reduce + 1 [2 3]))))
