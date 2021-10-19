@@ -1,4 +1,4 @@
 #+title: notes.yosevu.com
 #+created: 2020-09-24
 
-These are Yosevu's notes. They are written in [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][Org-mode]] and published with [[https://firn.theiceshelf.com/][Firn]].
+Yosevu's notes, written in [[https://orgmode.org/][Org mode]], published with [[https://firn.theiceshelf.com/][Firn]].
