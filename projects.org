@@ -1,7 +1,5 @@
 #+title: Projects
 #+created: 2020-09-24
-#+roam_alias:
-#+roam_tags:
 
 #+begin_comment
 Lessons learned

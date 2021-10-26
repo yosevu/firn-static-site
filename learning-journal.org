@@ -1,6 +1,6 @@
 #+title: Learning Journal
 #+created: 2020-09-22
-#+roam_alias:#+filetags:
+#+filetags:
 
 * Learning Journal
 #+begin_comment
@@ -17,6 +17,8 @@ Requirements
 - Sticky element
 - Sticky container with other content
 
+** Browser zoom affects font-size and relative font units
+** anki-connect error addon
 #+end_comment
 
 ** Sign multiple commits                                                  :git:

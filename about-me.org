@@ -4,9 +4,6 @@
 #+filetags:
 
 * About me
-:PROPERTIES:
-:ID:       27c9c9f1-780f-4afe-9a09-eb945d97d6af
-:END:
 Hello, I'm Yosevu Kilonzo. I'm a developer. I build things for the web at [[https://seesparkbox.com/][Sparkbox]].
 
 I am experienced with small and large full-stack projects with modern HTML, CSS, JavaScript, as well as other tools and technologies. I'm especially interested in Functional Programming, Clojure, and building [[file:integral-software.org][Integral Software]].
